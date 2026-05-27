@@ -1,0 +1,470 @@
+{
+  "updated": "2026-05-26",
+  "models": [
+    {
+      "name": "scBERT",
+      "category": "General",
+      "paper": [{ "label": "Nature Machine Intelligence", "url": "https://www.nature.com/articles/s42256-022-00534-z" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/TencentAILabHealthcare/scBERT" }],
+      "resources": [],
+      "notes": "BERT-style pretrained model for scRNA-seq cell type annotation."
+    },
+    {
+      "name": "Exceiver",
+      "category": "General",
+      "paper": [
+        { "label": "arXiv", "url": "https://arxiv.org/abs/2210.14330" },
+        { "label": "OpenReview PDF", "url": "https://openreview.net/pdf?id=XxRuCIgq2LX" }
+      ],
+      "code": [{ "label": "GitHub", "url": "https://github.com/keiserlab/exceiver" }],
+      "resources": [],
+      "notes": "Self-supervised gene expression language model for sparse count data."
+    },
+    {
+      "name": "scFormer",
+      "category": "General",
+      "paper": [{ "label": "OpenReview", "url": "https://openreview.net/forum?id=7hdmA0qtr5" }],
+      "code": [],
+      "resources": [],
+      "notes": "Transformer representation learning for cell and gene embeddings."
+    },
+    {
+      "name": "tGPT",
+      "category": "General",
+      "paper": [{ "label": "iScience / PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10176267/" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/deeplearningplus/tGPT" }],
+      "resources": [],
+      "notes": "Generative pretraining from ranked transcriptomes."
+    },
+    {
+      "name": "Geneformer",
+      "category": "General",
+      "paper": [{ "label": "Nature", "url": "https://www.nature.com/articles/s41586-023-06139-9" }],
+      "code": [{ "label": "Hugging Face", "url": "https://huggingface.co/ctheodoris/Geneformer" }],
+      "resources": [{ "label": "Docs", "url": "https://geneformer.readthedocs.io/" }],
+      "notes": "Foundation transformer for context-aware network biology predictions from single-cell transcriptomes."
+    },
+    {
+      "name": "scGPT",
+      "category": "General",
+      "paper": [{ "label": "Nature Methods", "url": "https://www.nature.com/articles/s41592-024-02201-0" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/bowang-lab/scGPT" }],
+      "resources": [{ "label": "Docs", "url": "https://scgpt.readthedocs.io/" }],
+      "notes": "Generative foundation model for scRNA-seq, perturbation, integration, annotation, multi-omics, and spatial workflows."
+    },
+    {
+      "name": "scFoundation",
+      "category": "General",
+      "paper": [{ "label": "Nature Methods", "url": "https://doi.org/10.1038/s41592-024-02305-7" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/biomap-research/scFoundation" }],
+      "resources": [
+        { "label": "Hugging Face", "url": "https://huggingface.co/genbio-ai/scFoundation" },
+        { "label": "Figshare data", "url": "https://figshare.com/articles/dataset/scFoundation_Large_Scale_Foundation_Model_on_Single-cell_Transcriptomics_-_processed_datasets/24049200" }
+      ],
+      "notes": "100M-parameter transcriptomics model pretrained on over 50M human cells."
+    },
+    {
+      "name": "Universal Cell Embeddings (UCE)",
+      "category": "General",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2023.11.28.568918v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/snap-stanford/UCE" }],
+      "resources": [
+        { "label": "Virtual Cells", "url": "https://virtualcellmodels.cziscience.com/model/uce" },
+        { "label": "Figshare model files", "url": "https://figshare.com/articles/dataset/Universal_Cell_Embedding_Model_Files/24320806" }
+      ],
+      "notes": "Cross-species zero-shot cell embeddings using protein-language-model gene tokenization."
+    },
+    {
+      "name": "CellPLM",
+      "category": "General",
+      "paper": [{ "label": "ICLR / OpenReview", "url": "https://openreview.net/forum?id=BKXvPDekud" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/OmicsML/CellPLM" }],
+      "resources": [],
+      "notes": "Pretrained cell language model designed beyond single-cell-only context."
+    },
+    {
+      "name": "SCimilarity",
+      "category": "General",
+      "paper": [{ "label": "Nature", "url": "https://www.nature.com/articles/s41586-024-08411-y" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/Genentech/scimilarity" }],
+      "resources": [
+        { "label": "Docs", "url": "https://genentech.github.io/scimilarity/" },
+        { "label": "Zenodo weights/data", "url": "https://zenodo.org/records/10685499" }
+      ],
+      "notes": "Deep metric-learning cell atlas foundation model for scalable search of similar human cell states."
+    },
+    {
+      "name": "scPRINT",
+      "category": "General",
+      "paper": [{ "label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-025-58699-1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/cantinilab/scPRINT" }],
+      "resources": [
+        { "label": "Docs", "url": "https://cantinilab.github.io/scPRINT/" },
+        { "label": "Virtual Cells", "url": "https://virtualcellmodels.cziscience.com/model/scprint" },
+        { "label": "Hugging Face", "url": "https://huggingface.co/jkobject/scPRINT" }
+      ],
+      "notes": "Large cell model for cell embeddings, labels, denoising, and genome-wide gene network inference."
+    },
+    {
+      "name": "scCello",
+      "category": "General",
+      "paper": [
+        { "label": "NeurIPS PDF", "url": "https://papers.nips.cc/paper_files/paper/2024/file/0be40478ab6ee0006ee3b38b158bbc8f-Paper-Conference.pdf" },
+        { "label": "OpenReview", "url": "https://openreview.net/forum?id=7rR6RAUaoC" }
+      ],
+      "code": [{ "label": "GitHub", "url": "https://github.com/DeepGraphLearning/scCello" }],
+      "resources": [],
+      "notes": "Cell-ontology-guided transcriptome foundation model."
+    },
+    {
+      "name": "scMulan",
+      "category": "General",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2024.01.25.577152v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/SuperBianC/scMulan" }],
+      "resources": [],
+      "notes": "Multitask generative pretrained language model for cell annotation, integration, and conditional generation."
+    },
+    {
+      "name": "GeneCompass",
+      "category": "General",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2023.09.26.559542v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/xCompass-AI/GeneCompass" }],
+      "resources": [],
+      "notes": "Knowledge-informed cross-species foundation model pretrained on human and mouse single-cell transcriptomes."
+    },
+    {
+      "name": "CellFM",
+      "category": "General",
+      "paper": [{ "label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-025-59926-5" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/biomed-AI/CellFM" }],
+      "resources": [{ "label": "Hugging Face", "url": "https://huggingface.co/perturblab/cellfm-800m" }],
+      "notes": "800M-parameter foundation model pretrained on about 100M human cells."
+    },
+    {
+      "name": "TranscriptFormer",
+      "category": "General",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2025.04.25.650731v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/czi-ai/transcriptformer" }],
+      "resources": [{ "label": "CZI Biohub blog", "url": "https://biohub.org/blog/transcriptformer-model-overview/" }],
+      "notes": "Cross-species generative cell atlas model trained on up to 112M cells across 12 species."
+    },
+    {
+      "name": "LangCell",
+      "category": "Multimodal / Spatial",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2405.06708" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/PharMolix/LangCell" }],
+      "resources": [{ "label": "OpenBioMed", "url": "https://github.com/PharMolix/OpenBioMed" }],
+      "notes": "Language-cell pretraining for cell identity understanding and cell-text retrieval."
+    },
+    {
+      "name": "Nicheformer",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        { "label": "Nature Methods", "url": "https://www.nature.com/articles/s41592-025-02814-z" },
+        { "label": "PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12695652/" }
+      ],
+      "code": [{ "label": "GitHub", "url": "https://github.com/theislab/nicheformer" }],
+      "resources": [],
+      "notes": "Foundation model trained on dissociated single-cell and spatial transcriptomics."
+    },
+    {
+      "name": "scMamba",
+      "category": "Multimodal / Spatial",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2506.20697" }],
+      "code": [],
+      "resources": [],
+      "notes": "State-space foundation model for single-cell multi-omics integration without HVG selection."
+    },
+    {
+      "name": "OKR-CELL",
+      "category": "Multimodal / Spatial",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2601.05648" }],
+      "code": [],
+      "resources": [],
+      "notes": "Open-world knowledge-aided robust cell-language pretraining."
+    },
+    {
+      "name": "CELLama",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        { "label": "Advanced Science / PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12866849/" },
+        { "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2024.05.10.593412v1" }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Single-cell and spatial transcriptomics embeddings using language-model-style cell sentences."
+    },
+    {
+      "name": "Cell2Text",
+      "category": "Multimodal / Spatial",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2509.24840" }],
+      "code": [],
+      "resources": [],
+      "notes": "Multimodal LLM for generating textual single-cell descriptions from RNA-seq data."
+    },
+    {
+      "name": "SToFM",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        { "label": "arXiv", "url": "https://arxiv.org/abs/2507.11588" },
+        { "label": "Hugging Face paper page", "url": "https://huggingface.co/papers/2507.11588" }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Multi-scale spatial transcriptomics foundation model."
+    },
+    {
+      "name": "FOCUS",
+      "category": "Multimodal / Spatial",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2025.11.11.684123v1" }],
+      "code": [],
+      "resources": [],
+      "notes": "Foundational generative model for cross-platform spatial transcriptomics enhancement."
+    },
+    {
+      "name": "Stack",
+      "category": "Multimodal / Spatial",
+      "paper": [{ "label": "Arc Institute news", "url": "https://arcinstitute.org/news/foundation-model-stack" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/ArcInstitute/state" }],
+      "resources": [
+        { "label": "Hugging Face Stack-Large-Aligned", "url": "https://huggingface.co/arcinstitute/Stack-Large-Aligned" },
+        { "label": "Perturb Sapiens dataset", "url": "https://huggingface.co/datasets/arcinstitute/Perturb-Sapiens" }
+      ],
+      "notes": "In-context-learning foundation model for single-cell biology and simulated perturbation atlases."
+    },
+    {
+      "name": "Cell2Sentence (C2S)",
+      "category": "LLM-native / Agentic",
+      "paper": [{ "label": "ICML / OpenReview", "url": "https://openreview.net/forum?id=EWt5wsEdvc" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/vandijklab/cell2sentence" }],
+      "resources": [
+        { "label": "Project site", "url": "https://www.c2s.bio/" },
+        { "label": "Docs", "url": "https://vandijklab-cell2sentence.readthedocs.io/" }
+      ],
+      "notes": "Converts cells into gene-ranked sentences for LLM-based single-cell modeling."
+    },
+    {
+      "name": "C2S-Scale",
+      "category": "LLM-native / Agentic",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v2" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/vandijklab/cell2sentence" }],
+      "resources": [
+        { "label": "Hugging Face 27B model", "url": "https://huggingface.co/vandijklab/C2S-Scale-Gemma-2-27B" },
+        { "label": "Google Research blog", "url": "https://blog.google/technology/ai/google-gemma-ai-cancer-therapy-discovery/" }
+      ],
+      "notes": "Scaled C2S models, including Gemma-based models for single-cell analysis and hypothesis generation."
+    },
+    {
+      "name": "ChatCell",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        { "label": "arXiv", "url": "https://arxiv.org/abs/2402.08303" },
+        { "label": "Hugging Face paper page", "url": "https://huggingface.co/papers/2402.08303" }
+      ],
+      "code": [{ "label": "GitHub", "url": "https://github.com/zjunlp/ChatCell" }],
+      "resources": [{ "label": "Hugging Face model", "url": "https://huggingface.co/zjunlp/chatcell-small" }],
+      "notes": "Natural-language interface and sequence-generation model for single-cell analysis tasks."
+    },
+    {
+      "name": "scChat",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        { "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2024.10.01.616063v1" },
+        { "label": "PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13061372/" }
+      ],
+      "code": [{ "label": "GitHub", "url": "https://github.com/li-group/scChat" }],
+      "resources": [],
+      "notes": "LLM-powered co-pilot for contextualized scRNA-seq analysis."
+    },
+    {
+      "name": "scPilot",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        { "label": "arXiv", "url": "https://arxiv.org/abs/2602.11609" },
+        { "label": "Hugging Face paper page", "url": "https://huggingface.co/papers/2602.11609" }
+      ],
+      "code": [{ "label": "GitHub", "url": "https://github.com/maitrix-org/scPilot" }],
+      "resources": [],
+      "notes": "LLM reasoning framework that directly inspects scRNA-seq data and calls tools."
+    },
+    {
+      "name": "GenePT",
+      "category": "LLM-native / Agentic",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/yiqunchen/GenePT" }],
+      "resources": [],
+      "notes": "ChatGPT-derived gene and cell embeddings."
+    },
+    {
+      "name": "scELMo",
+      "category": "LLM-native / Agentic",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2023.12.07.569910v1" }],
+      "code": [],
+      "resources": [],
+      "notes": "LLM-derived embeddings for single-cell data analysis."
+    },
+    {
+      "name": "scInterpreter",
+      "category": "LLM-native / Agentic",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2402.12405" }],
+      "code": [],
+      "resources": [],
+      "notes": "LLM-based interpretation framework for single-cell transcriptomics."
+    },
+    {
+      "name": "scHyena",
+      "category": "Domain / Task",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2310.02713" }],
+      "code": [],
+      "resources": [],
+      "notes": "Full-length single-cell RNA-seq foundation model for brain data."
+    },
+    {
+      "name": "GET",
+      "category": "Domain / Task",
+      "paper": [{ "label": "Nature", "url": "https://www.nature.com/articles/s41586-024-08391-z" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/GET-Foundation/get_model" }],
+      "resources": [
+        { "label": "GitHub organization", "url": "https://github.com/GET-Foundation" },
+        { "label": "Hugging Face", "url": "https://huggingface.co/get-foundation" }
+      ],
+      "notes": "General expression transformer for transcription across human cell types."
+    },
+    {
+      "name": "Cell-Graph Compass",
+      "category": "Domain / Task",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2024.04.29.591739v1" }],
+      "code": [],
+      "resources": [],
+      "notes": "Graph-structure foundation model for modeling single cells."
+    },
+    {
+      "name": "CancerFoundation",
+      "category": "Domain / Task",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2024.02.23.581779v1" }],
+      "code": [],
+      "resources": [],
+      "notes": "Cancer-focused single-cell RNA-seq foundation model for drug resistance."
+    },
+    {
+      "name": "Nephrobase Cell+",
+      "category": "Domain / Task",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2509.26223" }],
+      "code": [],
+      "resources": [],
+      "notes": "Kidney-focused multimodal single-cell foundation model."
+    },
+    {
+      "name": "scTranslator",
+      "category": "Domain / Task",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2023.07.04.547619v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/TencentAILabHealthcare/scTranslator" }],
+      "resources": [],
+      "notes": "Pretrained model for translating single-cell transcriptome to proteome."
+    },
+    {
+      "name": "scmFormer",
+      "category": "Domain / Task",
+      "paper": [
+        { "label": "PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11109621/" },
+        { "label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/38369163/" }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Multi-task transformer for single-cell proteomics and transcriptomics."
+    },
+    {
+      "name": "scpFormer",
+      "category": "Domain / Task",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2604.20003" }],
+      "code": [],
+      "resources": [],
+      "notes": "Foundation model for unified representation and integration of single-cell proteomics."
+    },
+    {
+      "name": "scCLIP",
+      "category": "Domain / Task",
+      "paper": [{ "label": "OpenReview", "url": "https://openreview.net/forum?id=QCSW6b0Lpk" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/jsxlei/scCLIP" }],
+      "resources": [],
+      "notes": "Multimodal single-cell contrastive integration pretraining."
+    },
+    {
+      "name": "scMAE",
+      "category": "Domain / Task",
+      "paper": [{ "label": "OpenReview", "url": "https://openreview.net/forum?id=oza2f8B4y2" }],
+      "code": [],
+      "resources": [],
+      "notes": "Single-cell masked autoencoder for automated immunophenotyping."
+    },
+    {
+      "name": "scRDiT",
+      "category": "Domain / Task",
+      "paper": [{ "label": "arXiv", "url": "https://arxiv.org/abs/2404.06153" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/DongShengze/scRDiT" }],
+      "resources": [],
+      "notes": "Diffusion transformer for generating single-cell RNA-seq data."
+    },
+    {
+      "name": "State",
+      "category": "Domain / Task",
+      "paper": [{ "label": "Arc Institute model collection", "url": "https://huggingface.co/arcinstitute" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/ArcInstitute/state" }],
+      "resources": [{ "label": "Hugging Face SE-600M", "url": "https://huggingface.co/arcinstitute/SE-600M" }],
+      "notes": "Set-based model family for cellular perturbation response and cell embeddings."
+    },
+    {
+      "name": "Tahoe-x1",
+      "category": "Domain / Task",
+      "paper": [{ "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.1101/2025.10.23.683759v1" }],
+      "code": [{ "label": "GitHub", "url": "https://github.com/tahoebio/tahoe-x1" }],
+      "resources": [
+        { "label": "Hugging Face", "url": "https://huggingface.co/tahoebio/Tahoe-x1" },
+        { "label": "Blog", "url": "https://www.tahoebio.ai/news/tahoe-x1-blog" }
+      ],
+      "notes": "Perturbation-trained single-cell foundation model family up to 3B parameters."
+    }
+  ],
+  "resources": [
+    {
+      "name": "A Survey on Foundation Language Models for Single-cell Biology",
+      "link": "https://aclanthology.org/2025.acl-long.26.pdf",
+      "notes": "Taxonomy and task summary for single-cell PLMs and LLMs."
+    },
+    {
+      "name": "Single-cell foundation models: bringing artificial intelligence into cell biology",
+      "link": "https://www.nature.com/articles/s12276-025-01547-5",
+      "notes": "Review of major scFMs, limitations, and applications."
+    },
+    {
+      "name": "Biology-driven insights into the power of single-cell foundation models",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12492631/",
+      "notes": "Benchmarking and biological analysis across major scFMs."
+    },
+    {
+      "name": "A Deep Dive into Single-Cell RNA Sequencing Foundation Models",
+      "link": "https://www.biorxiv.org/content/10.1101/2023.10.19.563100v1",
+      "notes": "Evaluation of scBERT and scGPT."
+    },
+    {
+      "name": "Assessing the limits of zero-shot foundation models in single-cell biology",
+      "link": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03781-6",
+      "notes": "Zero-shot evaluation of single-cell foundation model embeddings."
+    },
+    {
+      "name": "PertEval-scFM",
+      "link": "https://openreview.net/forum?id=pCz6OTCodu",
+      "notes": "Benchmark for perturbation-effect prediction with single-cell foundation models."
+    },
+    {
+      "name": "scDrugMap",
+      "link": "https://arxiv.org/abs/2505.05612",
+      "notes": "Benchmarking large foundation models for drug response prediction."
+    },
+    {
+      "name": "ONERAI foundation-model-single-cell-papers",
+      "link": "https://github.com/ONERAI/foundation-model-single-cell-papers",
+      "notes": "Broad paper list across single-cell, perturbation, pathology, and DNA foundation models."
+    }
+  ]
+}

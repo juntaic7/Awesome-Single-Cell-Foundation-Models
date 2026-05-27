@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome Single-Cell Foundation Models</title>
+    <meta name="description" content="Searchable collection of single-cell foundation models, papers, code, and resources.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="./">Single-Cell FMs</a>
+        <div class="nav-links">
+          <a href="#models">Models</a>
+          <a href="#resources">Surveys</a>
+          <a href="#contribute">Contribute</a>
+          <a href="https://github.com/juntaic/Awesome-Single-Cell-Foundation-Models#readme">Markdown</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <p class="eyebrow">Awesome list</p>
+        <h1>Single-cell foundation models, organized for discovery and contribution.</h1>
+        <p class="subtitle">
+          Browse papers, code, model cards, docs, datasets, and project pages. Search and filters are reflected in the URL, so any view can be shared.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#models">Browse models</a>
+          <a class="button" href="https://github.com/juntaic/Awesome-Single-Cell-Foundation-Models/issues/new?template=add-model.yml">Suggest a model</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="stats" aria-label="Collection summary">
+        <div>
+          <span id="modelCount">0</span>
+          <p>Models</p>
+        </div>
+        <div>
+          <span id="codeCount">0</span>
+          <p>Code links</p>
+        </div>
+        <div>
+          <span id="resourceCount">0</span>
+          <p>Extra resources</p>
+        </div>
+        <div>
+          <span id="updatedDate">-</span>
+          <p>Last updated</p>
+        </div>
+      </section>
+
+      <section id="models" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Collection</p>
+            <h2>Models</h2>
+          </div>
+          <button id="copyView" class="button small" type="button">Copy current view</button>
+        </div>
+
+        <div class="filters" aria-label="Model filters">
+          <label class="search">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Search model, note, paper, resource...">
+          </label>
+
+          <label>
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="">All categories</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Resource type</span>
+            <select id="resourceFilter">
+              <option value="">Any resource</option>
+              <option value="code">Has code</option>
+              <option value="model">Has model / weights</option>
+              <option value="docs">Has docs / project</option>
+              <option value="data">Has data</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="result-row">
+          <p id="resultCount">Showing 0 models</p>
+          <button id="resetFilters" type="button">Reset filters</button>
+        </div>
+
+        <div id="modelGrid" class="model-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="resources" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reading</p>
+            <h2>Surveys and benchmarks</h2>
+          </div>
+        </div>
+        <div id="resourceList" class="resource-list"></div>
+      </section>
+
+      <section id="contribute" class="section contribute">
+        <div>
+          <p class="eyebrow">Contribute</p>
+          <h2>Keep the list easy to update.</h2>
+          <p>
+            Add or edit entries in <code>site/data.json</code>. Each model uses the same fields:
+            <code>name</code>, <code>category</code>, <code>paper</code>, <code>code</code>,
+            <code>resources</code>, and <code>notes</code>.
+          </p>
+        </div>
+        <div class="contribute-actions">
+          <a class="button primary" href="https://github.com/juntaic/Awesome-Single-Cell-Foundation-Models/issues/new?template=add-model.yml">Open an issue</a>
+          <a class="button" href="https://github.com/juntaic/Awesome-Single-Cell-Foundation-Models/pulls">Submit a PR</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built from <code>site/data.json</code>. No tracking, no build step.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
