@@ -1,0 +1,49 @@
+name: Add a model
+description: Suggest a single-cell foundation model or related resource.
+title: "[Add]: "
+labels: ["model"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model name
+      placeholder: scGPT
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: Paper link
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code link
+      placeholder: https://github.com/...
+  - type: textarea
+    id: resources
+    attributes:
+      label: Extra resources
+      description: Add model cards, docs, project pages, datasets, demos, or blogs.
+      placeholder: |
+        - Hugging Face:
+        - Project:
+        - Dataset:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - General
+        - Multimodal / Spatial
+        - LLM-native / Agentic
+        - Domain / Task
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Short note
+      placeholder: One sentence describing the model and scope.
