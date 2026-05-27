@@ -18,6 +18,14 @@ body:
     validations:
       required: true
   - type: input
+    id: date
+    attributes:
+      label: Paper date
+      description: Use YYYY-MM-DD when possible, or YYYY-MM / YYYY if only partial dates are available.
+      placeholder: "2026-05-26"
+    validations:
+      required: true
+  - type: input
     id: code
     attributes:
       label: Code link

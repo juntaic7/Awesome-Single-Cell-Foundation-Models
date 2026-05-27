@@ -109,6 +109,7 @@ function renderModels() {
         <article class="model-card">
           <header>
             <div>
+              <p class="model-date">${model.date || ""}</p>
               <h3>${model.name}</h3>
               <p class="notes">${model.notes}</p>
             </div>
