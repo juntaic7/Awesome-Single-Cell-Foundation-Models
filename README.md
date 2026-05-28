@@ -12,6 +12,8 @@ The web version is the easiest way to browse and share this collection. It adds:
 
 - Search across model names, notes, papers, code, and resources
 - Category and resource filters with shareable URLs
+- Date sorting by when the paper or preprint appeared
+- A timeline plot showing when each model came out
 - Cards for papers, code, model weights, docs, project pages, and datasets
 - A simple contribution path through issues or edits to [`site/data.json`](site/data.json)
 
