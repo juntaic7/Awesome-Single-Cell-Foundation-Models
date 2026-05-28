@@ -6,15 +6,17 @@ Last updated: 2026-05-26.
 
 ## Read this list on the web
 
-The website in [`site/`](site/) is the easiest way to browse and share this
-collection. It adds:
+Browse the live site at [awesomescfm.live](https://awesomescfm.live/).
+
+The web version is the easiest way to browse and share this collection. It adds:
 
 - Search across model names, notes, papers, code, and resources
 - Category and resource filters with shareable URLs
 - Cards for papers, code, model weights, docs, project pages, and datasets
 - A simple contribution path through issues or edits to [`site/data.json`](site/data.json)
 
-To preview locally:
+The static website source lives in [`site/`](site/) and is published with
+GitHub Pages. To preview changes locally while developing:
 
 ```bash
 python3 -m http.server 8000 --directory site
