@@ -54,7 +54,7 @@ Then open <http://localhost:8000>.
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
 | OKR-CELL | 2026-01 | [arXiv](https://arxiv.org/abs/2601.05648) |  |  | Open-world knowledge-aided robust cell-language pretraining. |
-| FOCUS | 2025-11-11 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.11.11.684123v1) |  |  | Foundational generative model for cross-platform spatial transcriptomics enhancement. |
+| FOCUS | 2025-12-23 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2025.12.23.696267v2) |  |  | Foundational generative model for cross-platform spatial transcriptomics enhancement. |
 | Cell2Text | 2025-09 | [arXiv](https://arxiv.org/abs/2509.24840) |  |  | Multimodal LLM for generating textual single-cell descriptions from RNA-seq data. |
 | SToFM | 2025-07 | [arXiv](https://arxiv.org/abs/2507.11588), [Hugging Face paper page](https://huggingface.co/papers/2507.11588) |  |  | Multi-scale spatial transcriptomics foundation model. |
 | scMamba | 2025-06 | [arXiv](https://arxiv.org/abs/2506.20697) |  |  | State-space foundation model for single-cell multi-omics integration without HVG selection. |
