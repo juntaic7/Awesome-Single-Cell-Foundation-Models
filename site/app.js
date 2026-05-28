@@ -27,6 +27,16 @@ const els = {
   resourceList: document.querySelector("#resourceList")
 };
 
+function currentParams() {
+  const params = new URLSearchParams();
+  if (state.query) params.set("q", state.query);
+  if (state.category) params.set("category", state.category);
+  if (state.resource) params.set("resource", state.resource);
+  if (state.timelineStart) params.set("timelineStart", state.timelineStart);
+  if (state.timelineEnd) params.set("timelineEnd", state.timelineEnd);
+  return params;
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -127,17 +137,21 @@ function getSortedModels() {
 }
 
 function updateUrl() {
-  const params = new URLSearchParams();
-  if (state.query) params.set("q", state.query);
-  if (state.category) params.set("category", state.category);
-  if (state.resource) params.set("resource", state.resource);
-  if (state.timelineStart) params.set("timelineStart", state.timelineStart);
-  if (state.timelineEnd) params.set("timelineEnd", state.timelineEnd);
+  const params = currentParams();
   const next = `${window.location.pathname}${params.toString() ? `?${params}` : ""}${window.location.hash}`;
   window.history.replaceState({}, "", next);
+  updateModelLinks(params);
+}
+
+function updateModelLinks(params = currentParams()) {
+  const query = params.toString();
+  document.querySelectorAll(".models-link").forEach((link) => {
+    link.href = `models.html${query ? `?${query}` : ""}`;
+  });
 }
 
 function renderStats() {
+  if (!els.modelCount) return;
   const models = state.data.models;
   const codeCount = models.filter((model) => model.code.length > 0).length;
   const resourceCount = models.reduce((sum, model) => sum + model.resources.length, 0);
@@ -149,6 +163,7 @@ function renderStats() {
 }
 
 function renderCategories() {
+  if (!els.categoryFilter) return;
   const categories = [...new Set(state.data.models.map((model) => model.category))].sort();
   for (const category of categories) {
     const option = document.createElement("option");
@@ -159,6 +174,7 @@ function renderCategories() {
 }
 
 function renderTimelineRangeControls() {
+  if (!els.timelineStart || !els.timelineEnd) return;
   const datedModels = state.data.models
     .map((model) => normalizeDate(model.date))
     .filter(Boolean);
@@ -183,7 +199,11 @@ function renderTimelineRangeControls() {
 
 function renderModels() {
   const models = getSortedModels();
-  els.resultCount.textContent = `Showing ${models.length} of ${state.data.models.length} models`;
+  if (els.resultCount) {
+    els.resultCount.textContent = `Showing ${models.length} of ${state.data.models.length} models`;
+  }
+
+  if (!els.modelGrid) return;
 
   if (!models.length) {
     els.modelGrid.innerHTML = '<p class="notes">No models match the current filters.</p>';
@@ -218,6 +238,7 @@ function renderModels() {
 }
 
 function renderTimeline() {
+  if (!els.timelinePlot || !els.timelineCount) return;
   const datedModels = getSortedModels()
     .map((model) => ({ ...model, normalizedDate: normalizeDate(model.date) }))
     .filter((model) => model.normalizedDate);
@@ -316,6 +337,7 @@ function renderTimeline() {
 }
 
 function renderResources() {
+  if (!els.resourceList) return;
   els.resourceList.innerHTML = [...state.data.resources]
     .sort((a, b) => {
       const aDate = normalizeDate(a.date);
@@ -343,84 +365,100 @@ function applyParams() {
   state.timelineStart = params.get("timelineStart") || "";
   state.timelineEnd = params.get("timelineEnd") || "";
 
-  els.searchInput.value = state.query;
-  els.categoryFilter.value = state.category;
-  els.resourceFilter.value = state.resource;
-  els.timelineStart.value = state.timelineStart;
-  els.timelineEnd.value = state.timelineEnd;
+  if (els.searchInput) els.searchInput.value = state.query;
+  if (els.categoryFilter) els.categoryFilter.value = state.category;
+  if (els.resourceFilter) els.resourceFilter.value = state.resource;
+  if (els.timelineStart) els.timelineStart.value = state.timelineStart;
+  if (els.timelineEnd) els.timelineEnd.value = state.timelineEnd;
 }
 
 function bindEvents() {
-  els.searchInput.addEventListener("input", (event) => {
-    state.query = event.target.value;
-    updateUrl();
-    renderModels();
-    renderTimeline();
-  });
+  if (els.searchInput) {
+    els.searchInput.addEventListener("input", (event) => {
+      state.query = event.target.value;
+      updateUrl();
+      renderModels();
+      renderTimeline();
+    });
+  }
 
-  els.categoryFilter.addEventListener("change", (event) => {
-    state.category = event.target.value;
-    updateUrl();
-    renderModels();
-    renderTimeline();
-  });
+  if (els.categoryFilter) {
+    els.categoryFilter.addEventListener("change", (event) => {
+      state.category = event.target.value;
+      updateUrl();
+      renderModels();
+      renderTimeline();
+    });
+  }
 
-  els.resourceFilter.addEventListener("change", (event) => {
-    state.resource = event.target.value;
-    updateUrl();
-    renderModels();
-    renderTimeline();
-  });
+  if (els.resourceFilter) {
+    els.resourceFilter.addEventListener("change", (event) => {
+      state.resource = event.target.value;
+      updateUrl();
+      renderModels();
+      renderTimeline();
+    });
+  }
 
-  els.resetFilters.addEventListener("click", () => {
-    state.query = "";
-    state.category = "";
-    state.resource = "";
-    els.searchInput.value = "";
-    els.categoryFilter.value = "";
-    els.resourceFilter.value = "";
-    updateUrl();
-    renderModels();
-    renderTimeline();
-  });
+  if (els.resetFilters) {
+    els.resetFilters.addEventListener("click", () => {
+      state.query = "";
+      state.category = "";
+      state.resource = "";
+      if (els.searchInput) els.searchInput.value = "";
+      if (els.categoryFilter) els.categoryFilter.value = "";
+      if (els.resourceFilter) els.resourceFilter.value = "";
+      updateUrl();
+      renderModels();
+      renderTimeline();
+    });
+  }
 
-  els.timelineStart.addEventListener("change", (event) => {
-    state.timelineStart = event.target.value;
-    updateUrl();
-    renderTimeline();
-  });
+  if (els.timelineStart) {
+    els.timelineStart.addEventListener("change", (event) => {
+      state.timelineStart = event.target.value;
+      updateUrl();
+      renderTimeline();
+    });
+  }
 
-  els.timelineEnd.addEventListener("change", (event) => {
-    state.timelineEnd = event.target.value;
-    updateUrl();
-    renderTimeline();
-  });
+  if (els.timelineEnd) {
+    els.timelineEnd.addEventListener("change", (event) => {
+      state.timelineEnd = event.target.value;
+      updateUrl();
+      renderTimeline();
+    });
+  }
 
-  els.resetTimelineRange.addEventListener("click", () => {
-    state.timelineStart = "";
-    state.timelineEnd = "";
-    renderTimelineRangeControls();
-    updateUrl();
-    renderTimeline();
-  });
+  if (els.resetTimelineRange) {
+    els.resetTimelineRange.addEventListener("click", () => {
+      state.timelineStart = "";
+      state.timelineEnd = "";
+      renderTimelineRangeControls();
+      updateUrl();
+      renderTimeline();
+    });
+  }
 
-  els.copyView.addEventListener("click", async () => {
-    if (navigator.clipboard) {
-      await navigator.clipboard.writeText(window.location.href);
-    } else {
-      const value = window.location.href;
-      const input = document.createElement("input");
-      input.value = value;
-      document.body.appendChild(input);
-      input.select();
-      document.execCommand("copy");
-      input.remove();
-    }
-    els.copyView.textContent = "Copied";
-    window.setTimeout(() => {
-      els.copyView.textContent = "Copy current view";
-    }, 1300);
-  });
+  if (els.copyView) {
+    els.copyView.addEventListener("click", async () => {
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(window.location.href);
+      } else {
+        const value = window.location.href;
+        const input = document.createElement("input");
+        input.value = value;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        input.remove();
+      }
+      els.copyView.textContent = "Copied";
+      window.setTimeout(() => {
+        els.copyView.textContent = "Copy current view";
+      }, 1300);
+    });
+  }
 }
 
 async function init() {
@@ -434,9 +472,11 @@ async function init() {
   renderTimelineRangeControls();
   renderModels();
   renderTimeline();
+  updateModelLinks();
   bindEvents();
 }
 
 init().catch((error) => {
-  els.modelGrid.innerHTML = `<p class="notes">Could not load site/data.json: ${error.message}</p>`;
+  const target = els.modelGrid || els.timelinePlot || document.querySelector("main");
+  target.innerHTML = `<p class="notes">Could not load data.json: ${error.message}</p>`;
 });
