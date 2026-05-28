@@ -2,6 +2,25 @@
   "updated": "2026-05-28",
   "models": [
     {
+      "name": "Lingshu-Cell",
+      "category": "General",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2603.25240"
+        }
+      ],
+      "code": [],
+      "resources": [
+        {
+          "label": "Project page",
+          "url": "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/"
+        }
+      ],
+      "notes": "Masked discrete diffusion generative cellular world model for transcriptome-wide modeling and perturbation response prediction.",
+      "date": "2026-03"
+    },
+    {
       "name": "RegFormer",
       "category": "General",
       "paper": [
