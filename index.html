@@ -10,9 +10,10 @@
   <body>
     <header class="site-header">
       <nav class="topbar" aria-label="Primary">
-        <a class="brand" href="./">AwesomeSCFM</a>
+        <a class="brand" href="./">Awesome Single Cell Foundation Models</a>
         <div class="nav-links">
           <a href="#models">Models</a>
+          <a href="#timeline">Timeline</a>
           <a href="#resources">Surveys</a>
           <a href="#contribute">Contribute</a>
           <a href="https://github.com/juntaic7/Awesome-Single-Cell-Foundation-Models#readme">Markdown</a>
@@ -20,10 +21,9 @@
       </nav>
 
       <section class="hero">
-        <p class="eyebrow">AwesomeSCFM</p>
         <h1>Single-cell foundation models, organized for discovery and contribution.</h1>
         <p class="subtitle">
-          Browse papers, code, model cards, docs, datasets, and project pages. Search and filters are reflected in the URL, so any view can be shared.
+          Browse papers, code, model cards, docs, datasets, and project pages. Sort by paper or preprint date, and share filtered views from the URL.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#models">Browse models</a>
@@ -50,6 +50,28 @@
           <span id="updatedDate">-</span>
           <p>Last updated</p>
         </div>
+      </section>
+
+      <section id="timeline" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2>When models appeared</h2>
+          </div>
+          <p id="timelineCount" class="section-note">Showing 0 models</p>
+        </div>
+        <div class="timeline-controls" aria-label="Timeline date range">
+          <label>
+            <span>Start month</span>
+            <input id="timelineStart" type="month">
+          </label>
+          <label>
+            <span>End month</span>
+            <input id="timelineEnd" type="month">
+          </label>
+          <button id="resetTimelineRange" type="button">Reset range</button>
+        </div>
+        <div id="timelinePlot" class="timeline-plot" aria-live="polite"></div>
       </section>
 
       <section id="models" class="section">
@@ -84,6 +106,7 @@
               <option value="data">Has data</option>
             </select>
           </label>
+
         </div>
 
         <div class="result-row">
@@ -110,7 +133,7 @@
           <h2>Keep the list easy to update.</h2>
           <p>
             Add or edit entries in <code>site/data.json</code>. Each model uses the same fields:
-            <code>name</code>, <code>category</code>, <code>paper</code>, <code>code</code>,
+            <code>name</code>, <code>category</code>, <code>date</code>, <code>paper</code>, <code>code</code>,
             <code>resources</code>, and <code>notes</code>.
           </p>
         </div>

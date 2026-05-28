@@ -211,6 +211,13 @@ footer p {
   margin-bottom: 22px;
 }
 
+.section-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
 .filters {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) 220px 220px;
@@ -343,6 +350,100 @@ select:focus {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
+}
+
+.timeline-plot {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.timeline-controls {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.timeline-controls label {
+  width: 180px;
+}
+
+.timeline-controls button {
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--link);
+  padding: 0 4px;
+}
+
+.timeline-plot svg {
+  display: block;
+  min-width: 920px;
+  width: 100%;
+}
+
+.timeline-year line {
+  stroke: #e3e9e6;
+  stroke-width: 1;
+}
+
+.timeline-year text {
+  fill: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.timeline-lane line {
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.timeline-lane text {
+  fill: var(--text);
+  font-size: 14px;
+  font-weight: 850;
+  text-anchor: end;
+}
+
+.timeline-point circle {
+  stroke: #fff;
+  stroke-width: 2.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 150ms ease, stroke-width 150ms ease;
+}
+
+.timeline-point {
+  cursor: pointer;
+}
+
+.timeline-point text {
+  fill: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-linejoin: round;
+  stroke-width: 4px;
+  transition: opacity 120ms ease;
+}
+
+.timeline-point:hover circle,
+.timeline-point:focus circle {
+  transform: scale(1.8);
+  stroke-width: 2;
+}
+
+.timeline-point:hover text,
+.timeline-point:focus text {
+  opacity: 1;
 }
 
 .resource-card {
