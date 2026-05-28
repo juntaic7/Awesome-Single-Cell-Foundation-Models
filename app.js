@@ -46,6 +46,23 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function slugify(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function modelCardId(model) {
+  return `model-${slugify(`${model.name}-${model.date || "unknown"}`)}`;
+}
+
+function modelCardHref(model) {
+  const params = currentParams();
+  const query = params.toString();
+  return `models.html${query ? `?${query}` : ""}#${modelCardId(model)}`;
+}
+
 function normalizeDate(date) {
   if (!date) return null;
   const parts = String(date).split("-").map((part) => Number.parseInt(part, 10));
@@ -150,6 +167,19 @@ function updateModelLinks(params = currentParams()) {
   });
 }
 
+function scrollToHashTarget() {
+  if (!window.location.hash) return;
+  const targetId = window.location.hash.slice(1);
+  if (!targetId) return;
+
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  window.requestAnimationFrame(() => {
+    target.scrollIntoView({ block: "start" });
+  });
+}
+
 function renderStats() {
   if (!els.modelCount) return;
   const models = state.data.models;
@@ -217,7 +247,7 @@ function renderModels() {
       const resourceLinks = linkList(model.resources);
       const dateLabel = model.date ? `Published ${escapeHtml(model.date)}` : "Date unknown";
       return `
-        <article class="model-card">
+        <article id="${escapeHtml(modelCardId(model))}" class="model-card">
           <header>
             <div>
               <p class="model-date">${dateLabel}</p>
@@ -235,6 +265,8 @@ function renderModels() {
       `;
     })
     .join("");
+
+  scrollToHashTarget();
 }
 
 function renderTimeline() {
@@ -317,10 +349,13 @@ function renderTimeline() {
       const labelOffset = index % 2 === 0 ? -18 : 28;
       const color = palette[categories.indexOf(model.category) % palette.length];
       const pointLabel = `${model.name} - ${model.date} - ${model.category}`;
+      const cardHref = modelCardHref(model);
       return `
         <g class="timeline-point" transform="translate(${x} ${y})" tabindex="0" focusable="true" aria-label="${escapeHtml(pointLabel)}">
           <circle r="7" fill="${color}"></circle>
-          <text x="0" y="${labelOffset}" text-anchor="middle">${escapeHtml(model.name)}</text>
+          <a class="timeline-point-link" href="${escapeHtml(cardHref)}" aria-label="Open ${escapeHtml(model.name)} card">
+            <text x="0" y="${labelOffset}" text-anchor="middle">${escapeHtml(model.name)}</text>
+          </a>
           <title>${escapeHtml(pointLabel)}</title>
         </g>
       `;
@@ -373,6 +408,8 @@ function applyParams() {
 }
 
 function bindEvents() {
+  window.addEventListener("hashchange", scrollToHashTarget);
+
   if (els.searchInput) {
     els.searchInput.addEventListener("input", (event) => {
       state.query = event.target.value;

@@ -333,6 +333,12 @@ select:focus {
   display: grid;
   gap: 16px;
   padding: 20px;
+  scroll-margin-top: 24px;
+}
+
+.model-card:target {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow);
 }
 
 .model-card header {
@@ -487,6 +493,24 @@ select:focus {
   transition: opacity 120ms ease;
 }
 
+.timeline-point-link {
+  pointer-events: none;
+}
+
+.timeline-point:hover .timeline-point-link,
+.timeline-point:focus .timeline-point-link,
+.timeline-point-link:focus {
+  pointer-events: auto;
+}
+
+.timeline-point:hover .timeline-point-link text,
+.timeline-point:focus .timeline-point-link text,
+.timeline-point-link:focus text {
+  cursor: pointer;
+  pointer-events: auto;
+  text-decoration: underline;
+}
+
 .timeline-point:hover circle,
 .timeline-point:focus circle {
   transform: scale(1.8);
@@ -494,7 +518,8 @@ select:focus {
 }
 
 .timeline-point:hover text,
-.timeline-point:focus text {
+.timeline-point:focus text,
+.timeline-point-link:focus text {
   opacity: 1;
 }
 
