@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Models | AwesomeSCFM</title>
+    <meta name="description" content="Search and browse single-cell foundation models, papers, code, model cards, docs, datasets, and project pages.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header compact-header">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="./">Awesome Single Cell Foundation Models</a>
+        <div class="nav-links">
+          <a href="./">Home</a>
+          <a href="./#timeline">Timeline</a>
+          <a href="#resources">Surveys</a>
+          <a href="./#contribute">Contribute</a>
+          <a href="https://github.com/juntaic7/Awesome-Single-Cell-Foundation-Models#readme">Markdown</a>
+        </div>
+      </nav>
+
+      <section class="page-hero">
+        <p class="eyebrow">Collection</p>
+        <h1>Model details</h1>
+        <p class="subtitle">
+          Search the full model collection by name, category, paper venue, code, model weights, datasets, and notes.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="stats" aria-label="Collection summary">
+        <div>
+          <span id="modelCount">0</span>
+          <p>Models</p>
+        </div>
+        <div>
+          <span id="codeCount">0</span>
+          <p>Code links</p>
+        </div>
+        <div>
+          <span id="resourceCount">0</span>
+          <p>Extra resources</p>
+        </div>
+        <div>
+          <span id="updatedDate">-</span>
+          <p>Last updated</p>
+        </div>
+      </section>
+
+      <section id="models" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Filter</p>
+            <h2>Models</h2>
+          </div>
+          <button id="copyView" class="button small" type="button">Copy current view</button>
+        </div>
+
+        <div class="filters" aria-label="Model filters">
+          <label class="search">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Search model, note, paper, resource...">
+          </label>
+
+          <label>
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="">All categories</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Resource type</span>
+            <select id="resourceFilter">
+              <option value="">Any resource</option>
+              <option value="code">Has code</option>
+              <option value="model">Has model / weights</option>
+              <option value="docs">Has docs / project</option>
+              <option value="data">Has data</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="result-row">
+          <p id="resultCount">Showing 0 models</p>
+          <button id="resetFilters" type="button">Reset filters</button>
+        </div>
+
+        <div id="modelGrid" class="model-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="resources" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reading</p>
+            <h2>Surveys and benchmarks</h2>
+          </div>
+        </div>
+        <div id="resourceList" class="resource-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built from <code>data.json</code>. No tracking, no build step.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
