@@ -388,13 +388,13 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.11.11.684123v1"
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.23.696267v2"
         }
       ],
       "code": [],
       "resources": [],
       "notes": "Foundational generative model for cross-platform spatial transcriptomics enhancement.",
-      "date": "2025-11-11"
+      "date": "2025-12-23"
     },
     {
       "name": "Cell2Text",
