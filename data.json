@@ -1,6 +1,295 @@
 {
-  "updated": "2026-05-26",
+  "updated": "2026-05-28",
   "models": [
+    {
+      "name": "RegFormer",
+      "category": "General",
+      "paper": [
+        {
+          "label": "Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-026-72198-x"
+        },
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.24.634217v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "GRN-guided Mamba foundation model pretrained on human single-cell transcriptomes.",
+      "date": "2026-05-05"
+    },
+    {
+      "name": "CellxPert",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2605.00930"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Multimodal single-cell and spatial foundation model with MCMC steering for in-silico perturbation.",
+      "date": "2026-04-30"
+    },
+    {
+      "name": "CLM-X",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.02.17.704943v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Multi-way Transformer foundation model for unified scRNA-seq and scATAC-seq analysis.",
+      "date": "2026-02-18"
+    },
+    {
+      "name": "OmniCell",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.29.696804v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Unified foundation model for single-cell and spatial transcriptomics pretrained on 67M profiles.",
+      "date": "2025-12-29"
+    },
+    {
+      "name": "LLM-scCurator",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.28.696778v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Backend-agnostic LLM framework for data-centric zero-shot cell-type annotation.",
+      "date": "2025-12-29"
+    },
+    {
+      "name": "CLM-access",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.08.10.669570v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HIM-AIM/CLM-access"
+        }
+      ],
+      "resources": [],
+      "notes": "Specialized cell language model for high-dimensional single-cell ATAC-seq analysis.",
+      "date": "2025-08-12"
+    },
+    {
+      "name": "PAST",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2507.06418"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Pan-cancer multimodal foundation model aligning histopathology images and single-cell transcriptomes.",
+      "date": "2025-07-08"
+    },
+    {
+      "name": "OmniPert",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.07.02.662744v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Transformer-based generative model for genetic and chemical perturbation responses in single cancer cells.",
+      "date": "2025-07-05"
+    },
+    {
+      "name": "HEIST",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2506.11152"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Hierarchical graph transformer foundation model for spatial transcriptomics and proteomics.",
+      "date": "2025-06-11"
+    },
+    {
+      "name": "CellReasoner",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.05.20.655112v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Reasoning-enhanced 7B LLM for zero- and few-shot single-cell type annotation.",
+      "date": "2025-05-26"
+    },
+    {
+      "name": "CellTypeAgent",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2505.08844"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "LLM-agent for trustworthy cell type annotation with external database verification.",
+      "date": "2025-05-13"
+    },
+    {
+      "name": "SCARF",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.04.07.647689v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Mamba-based foundation model for integrated single-cell ATAC-seq and RNA-seq analysis.",
+      "date": "2025-04-13"
+    },
+    {
+      "name": "GRNFormer",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2503.01682"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Biologically guided framework for integrating gene regulatory networks into RNA foundation models.",
+      "date": "2025-03-03"
+    },
+    {
+      "name": "scGPT-spatial",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/bowang-lab/scGPT-spatial"
+        }
+      ],
+      "resources": [],
+      "notes": "Continual pretraining of scGPT for spatial transcriptomics on SpatialHuman30M.",
+      "date": "2025-02-08"
+    },
+    {
+      "name": "EpiFoundation",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636688v1"
+        },
+        {
+          "label": "PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11839112/"
+        }
+      ],
+      "code": [],
+      "resources": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/UCSC-VLAA/EpiFoundation"
+        }
+      ],
+      "notes": "Single-cell ATAC-seq foundation model using peak-to-gene alignment.",
+      "date": "2025-02-08"
+    },
+    {
+      "name": "Lemur",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.02.04.636468v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Drosophila single-cell foundation model for fine-tuning-free hierarchical cell-type generation.",
+      "date": "2025-02-08"
+    },
+    {
+      "name": "Tabula",
+      "category": "General",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Privacy-preserving tabular foundation model for single-cell transcriptomics with federated learning.",
+      "date": "2025-01-06"
+    },
+    {
+      "name": "EpiAgent",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "Nature Methods",
+          "url": "https://www.nature.com/articles/s41592-025-02822-z"
+        },
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.12.19.629312v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/xy-chen16/EpiAgent"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Zenodo",
+          "url": "https://doi.org/10.5281/zenodo.16562787"
+        }
+      ],
+      "notes": "Foundation model for single-cell epigenomics pretrained on Human-scATAC-Corpus.",
+      "date": "2025-09-25"
+    },
     {
       "name": "CellFM",
       "category": "General",
@@ -470,6 +759,10 @@
       "category": "Multimodal / Spatial",
       "paper": [
         {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.01.09.698608v1"
+        },
+        {
           "label": "Arc Institute news",
           "url": "https://arcinstitute.org/news/foundation-model-stack"
         }
@@ -491,7 +784,7 @@
         }
       ],
       "notes": "In-context-learning foundation model for single-cell biology and simulated perturbation atlases.",
-      "date": "2025"
+      "date": "2026-01-09"
     },
     {
       "name": "CELLama",
@@ -801,6 +1094,10 @@
       "category": "Domain / Task",
       "paper": [
         {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661135v1"
+        },
+        {
           "label": "Arc Institute model collection",
           "url": "https://huggingface.co/arcinstitute"
         }
@@ -818,7 +1115,7 @@
         }
       ],
       "notes": "Set-based model family for cellular perturbation response and cell embeddings.",
-      "date": "2025"
+      "date": "2025-07-10"
     },
     {
       "name": "Cell-Graph Compass",
@@ -953,6 +1250,24 @@
     }
   ],
   "resources": [
+    {
+      "name": "Intermediate Layers Encode Optimal Biological Representations in Single-Cell Foundation Models",
+      "link": "https://arxiv.org/abs/2604.14838",
+      "notes": "Layer-wise benchmark of scFoundation and Tahoe-X1 representations for trajectory and perturbation tasks.",
+      "date": "2026-04-16"
+    },
+    {
+      "name": "Benchmarking zero-shot single-cell foundation model embeddings for cellular dynamics reconstruction",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.10.710748v1",
+      "notes": "Zero-shot benchmark focused on cellular dynamics reconstruction from foundation model embeddings.",
+      "date": "2026-03-10"
+    },
+    {
+      "name": "Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic in single-cell foundation models",
+      "link": "https://arxiv.org/abs/2603.02952",
+      "notes": "Sparse-autoencoder analysis of Geneformer and scGPT representations.",
+      "date": "2026-03"
+    },
     {
       "name": "scDrugMap",
       "link": "https://arxiv.org/abs/2505.05612",
