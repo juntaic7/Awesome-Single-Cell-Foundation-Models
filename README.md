@@ -4,7 +4,7 @@ A simple list of single-cell foundation models and related resources.
 
 Last updated: 2026-05-26.
 
-Note: The contents are AI-generated. Please let us know if there are misinformation.
+Note: The current contents are AI-generated and may contain mistakes. All collaborations are welcome, including validating existing entries, correcting inaccuracies, or proposing new papers and resources.
 
 ## Read this list on the web
 
