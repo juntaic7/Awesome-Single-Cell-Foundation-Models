@@ -2,7 +2,7 @@
 
 A simple list of single-cell foundation models and related resources.
 
-Last updated: 2026-05-26.
+Last updated: 2026-06-11.
 
 Note: The current contents are AI-generated and may contain mistakes. All collaborations are welcome, including validating existing entries, correcting inaccuracies, or proposing new papers and resources.
 
@@ -32,6 +32,12 @@ Then open <http://localhost:8000>.
 
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
+| RegFormer | 2026-05-05 | [Nature Communications](https://www.nature.com/articles/s41467-026-72198-x), [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.01.24.634217v1) |  |  | GRN-guided Mamba foundation model pretrained on human single-cell transcriptomes. |
+| CellVQ | 2026-03-16 | [Nature Communications](https://www.nature.com/articles/s41467-026-70071-5) | [GitHub](https://github.com/A4Bio/CellVQ) |  | Comprehensive interpretable single-cell foundation model with a discretized cell-code representation and CellVQ-Graph for biological discovery. |
+| Lingshu-Cell | 2026-03 | [arXiv](https://arxiv.org/abs/2603.25240) |  | [Project page](https://alibaba-damo-academy.github.io/lingshu-cell-homepage/) | Masked discrete diffusion generative cellular world model for transcriptome-wide modeling and perturbation response prediction. |
+| scLong | 2026-02-05 | [Nature Communications](https://www.nature.com/articles/s41467-026-69102-y), [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.11.09.622759v1) | [GitHub](https://github.com/BaiDing1234/scLong) | [Zenodo](https://zenodo.org/records/17510567) | Billion-parameter scRNA-seq foundation model pretrained on 48M cells with full-transcriptome attention and Gene Ontology knowledge. |
+| GREmLN | 2025-09-18 | [ICLR 2026 submission / OpenReview](https://openreview.net/forum?id=HdvI8bkdDG) |  |  | Graph-structure-aware transcriptomics foundation model that injects molecular interaction networks into Transformer attention. |
+| Tabula | 2025-09-18 | [NeurIPS 2025 / OpenReview](https://openreview.net/forum?id=Vk2sfKAdeu), [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1) |  |  | Privacy-preserving tabular self-supervised foundation model for single-cell transcriptomics with federated learning. |
 | CellFM | 2025-05-20 | [Nature Communications](https://www.nature.com/articles/s41467-025-59926-5) | [GitHub](https://github.com/biomed-AI/CellFM) | [Hugging Face](https://huggingface.co/perturblab/cellfm-800m) | 800M-parameter foundation model pretrained on about 100M human cells. |
 | TranscriptFormer | 2025-04-25 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.04.25.650731v1) | [GitHub](https://github.com/czi-ai/transcriptformer) | [CZI Biohub blog](https://biohub.org/blog/transcriptformer-model-overview/) | Cross-species generative cell atlas model trained on up to 112M cells across 12 species. |
 | scPRINT | 2025-04-16 | [Nature Communications](https://www.nature.com/articles/s41467-025-58699-1) | [GitHub](https://github.com/cantinilab/scPRINT) | [Docs](https://cantinilab.github.io/scPRINT/), [Virtual Cells](https://virtualcellmodels.cziscience.com/model/scprint), [Hugging Face](https://huggingface.co/jkobject/scPRINT) | Large cell model for cell embeddings, labels, denoising, and genome-wide gene network inference. |
@@ -53,13 +59,22 @@ Then open <http://localhost:8000>.
 
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
+| CAPTAIN | 2026-05-07 | [Nature Communications](https://www.nature.com/articles/s41467-026-72882-y) |  |  | Multimodal foundation model pretrained on co-assayed single-cell RNA and surface-protein profiles from more than four million cells. |
+| CellxPert | 2026-04-30 | [arXiv](https://arxiv.org/abs/2605.00930) |  |  | Multimodal single-cell and spatial foundation model with MCMC steering for in-silico perturbation. |
+| CLM-X | 2026-02-18 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.02.17.704943v1) |  |  | Multi-way Transformer foundation model for unified scRNA-seq and scATAC-seq analysis. |
+| Stack | 2026-01-09 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.01.09.698608v1), [Arc Institute news](https://arcinstitute.org/news/foundation-model-stack) | [GitHub](https://github.com/ArcInstitute/state) | [Hugging Face Stack-Large-Aligned](https://huggingface.co/arcinstitute/Stack-Large-Aligned), [Perturb Sapiens dataset](https://huggingface.co/datasets/arcinstitute/Perturb-Sapiens) | In-context-learning foundation model for single-cell biology and simulated perturbation atlases. |
 | OKR-CELL | 2026-01 | [arXiv](https://arxiv.org/abs/2601.05648) |  |  | Open-world knowledge-aided robust cell-language pretraining. |
+| OmniCell | 2025-12-29 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2025.12.29.696804v1) |  |  | Unified foundation model for single-cell and spatial transcriptomics pretrained on 67M profiles. |
 | FOCUS | 2025-12-23 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2025.12.23.696267v2) |  |  | Foundational generative model for cross-platform spatial transcriptomics enhancement. |
+| HiBio-ST | 2025-09-02 | [ICLR 2026 submission / OpenReview](https://openreview.net/forum?id=oG07enidTy) |  |  | Hierarchical multimodal foundation model using biological prior anchors for spatial transcriptomics and computational pathology. |
 | Cell2Text | 2025-09 | [arXiv](https://arxiv.org/abs/2509.24840) |  |  | Multimodal LLM for generating textual single-cell descriptions from RNA-seq data. |
+| PAST | 2025-07-08 | [arXiv](https://arxiv.org/abs/2507.06418) |  |  | Pan-cancer multimodal foundation model aligning histopathology images and single-cell transcriptomes. |
 | SToFM | 2025-07 | [arXiv](https://arxiv.org/abs/2507.11588), [Hugging Face paper page](https://huggingface.co/papers/2507.11588) |  |  | Multi-scale spatial transcriptomics foundation model. |
+| HEIST | 2025-06-11 | [arXiv](https://arxiv.org/abs/2506.11152) |  |  | Hierarchical graph transformer foundation model for spatial transcriptomics and proteomics. |
 | scMamba | 2025-06 | [arXiv](https://arxiv.org/abs/2506.20697) |  |  | State-space foundation model for single-cell multi-omics integration without HVG selection. |
+| SCARF | 2025-04-13 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.04.07.647689v1) |  |  | Mamba-based foundation model for integrated single-cell ATAC-seq and RNA-seq analysis. |
+| scGPT-spatial | 2025-02-08 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1) | [GitHub](https://github.com/bowang-lab/scGPT-spatial) |  | Continual pretraining of scGPT for spatial transcriptomics on SpatialHuman30M. |
 | Nicheformer | 2025 | [Nature Methods](https://www.nature.com/articles/s41592-025-02814-z), [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12695652/) | [GitHub](https://github.com/theislab/nicheformer) |  | Foundation model trained on dissociated single-cell and spatial transcriptomics. |
-| Stack | 2025 | [Arc Institute news](https://arcinstitute.org/news/foundation-model-stack) | [GitHub](https://github.com/ArcInstitute/state) | [Hugging Face Stack-Large-Aligned](https://huggingface.co/arcinstitute/Stack-Large-Aligned), [Perturb Sapiens dataset](https://huggingface.co/datasets/arcinstitute/Perturb-Sapiens) | In-context-learning foundation model for single-cell biology and simulated perturbation atlases. |
 | CELLama | 2024-05-10 | [Advanced Science / PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12866849/), [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.05.10.593412v1) |  |  | Single-cell and spatial transcriptomics embeddings using language-model-style cell sentences. |
 | LangCell | 2024-05 | [arXiv](https://arxiv.org/abs/2405.06708) | [GitHub](https://github.com/PharMolix/LangCell) | [OpenBioMed](https://github.com/PharMolix/OpenBioMed) | Language-cell pretraining for cell identity understanding and cell-text retrieval. |
 
@@ -68,6 +83,9 @@ Then open <http://localhost:8000>.
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
 | scPilot | 2026-02 | [arXiv](https://arxiv.org/abs/2602.11609), [Hugging Face paper page](https://huggingface.co/papers/2602.11609) | [GitHub](https://github.com/maitrix-org/scPilot) |  | LLM reasoning framework that directly inspects scRNA-seq data and calls tools. |
+| LLM-scCurator | 2025-12-29 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2025.12.28.696778v1) |  |  | Backend-agnostic LLM framework for data-centric zero-shot cell-type annotation. |
+| CellReasoner | 2025-05-26 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.05.20.655112v1) |  |  | Reasoning-enhanced 7B LLM for zero- and few-shot single-cell type annotation. |
+| CellTypeAgent | 2025-05-13 | [arXiv](https://arxiv.org/abs/2505.08844) |  |  | LLM-agent for trustworthy cell type annotation with external database verification. |
 | C2S-Scale | 2025-04-14 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.04.14.648850v2) | [GitHub](https://github.com/vandijklab/cell2sentence) | [Hugging Face 27B model](https://huggingface.co/vandijklab/C2S-Scale-Gemma-2-27B), [Google Research blog](https://blog.google/technology/ai/google-gemma-ai-cancer-therapy-discovery/) | Scaled C2S models, including Gemma-based models for single-cell analysis and hypothesis generation. |
 | scChat | 2024-10-01 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.10.01.616063v1), [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC13061372/) | [GitHub](https://github.com/li-group/scChat) |  | LLM-powered co-pilot for contextualized scRNA-seq analysis. |
 | Cell2Sentence (C2S) | 2024-07 | [ICML / OpenReview](https://openreview.net/forum?id=EWt5wsEdvc) | [GitHub](https://github.com/vandijklab/cell2sentence) | [Project site](https://www.c2s.bio/), [Docs](https://vandijklab-cell2sentence.readthedocs.io/) | Converts cells into gene-ranked sentences for LLM-based single-cell modeling. |
@@ -81,10 +99,17 @@ Then open <http://localhost:8000>.
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
 | scpFormer | 2026-04 | [arXiv](https://arxiv.org/abs/2604.20003) |  |  | Foundation model for unified representation and integration of single-cell proteomics. |
+| TxFM | 2026-03-03 | [ICLR 2026 Workshop / OpenReview](https://openreview.net/forum?id=NqZqClqtTK) |  |  | Transformer masked autoencoder trained on curated bulk and single-cell RNA-seq for perturbation representation and cell analysis tasks. |
 | Tahoe-x1 | 2025-10-23 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.10.23.683759v1) | [GitHub](https://github.com/tahoebio/tahoe-x1) | [Hugging Face](https://huggingface.co/tahoebio/Tahoe-x1), [Blog](https://www.tahoebio.ai/news/tahoe-x1-blog) | Perturbation-trained single-cell foundation model family up to 3B parameters. |
+| EpiAgent | 2025-09-25 | [Nature Methods](https://www.nature.com/articles/s41592-025-02822-z), [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.12.19.629312v1) | [GitHub](https://github.com/xy-chen16/EpiAgent) | [Zenodo](https://doi.org/10.5281/zenodo.16562787) | Foundation model for single-cell epigenomics pretrained on Human-scATAC-Corpus. |
 | Nephrobase Cell+ | 2025-09 | [arXiv](https://arxiv.org/abs/2509.26223) |  |  | Kidney-focused multimodal single-cell foundation model. |
+| CLM-access | 2025-08-12 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.08.10.669570v1) | [GitHub](https://github.com/HIM-AIM/CLM-access) |  | Specialized cell language model for high-dimensional single-cell ATAC-seq analysis. |
+| State | 2025-07-10 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.06.26.661135v1), [Arc Institute model collection](https://huggingface.co/arcinstitute) | [GitHub](https://github.com/ArcInstitute/state) | [Hugging Face SE-600M](https://huggingface.co/arcinstitute/SE-600M) | Set-based model family for cellular perturbation response and cell embeddings. |
+| OmniPert | 2025-07-05 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.07.02.662744v1) |  |  | Transformer-based generative model for genetic and chemical perturbation responses in single cancer cells. |
+| GRNFormer | 2025-03-03 | [arXiv](https://arxiv.org/abs/2503.01682) |  |  | Biologically guided framework for integrating gene regulatory networks into RNA foundation models. |
+| EpiFoundation | 2025-02-08 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.02.05.636688v1), [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11839112/) |  | [Hugging Face](https://huggingface.co/UCSC-VLAA/EpiFoundation) | Single-cell ATAC-seq foundation model using peak-to-gene alignment. |
+| Lemur | 2025-02-08 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.02.04.636468v1) |  |  | Drosophila single-cell foundation model for fine-tuning-free hierarchical cell-type generation. |
 | GET | 2025-01-08 | [Nature](https://www.nature.com/articles/s41586-024-08391-z) | [GitHub](https://github.com/GET-Foundation/get_model) | [GitHub organization](https://github.com/GET-Foundation), [Hugging Face](https://huggingface.co/get-foundation) | General expression transformer for transcription across human cell types. |
-| State | 2025 | [Arc Institute model collection](https://huggingface.co/arcinstitute) | [GitHub](https://github.com/ArcInstitute/state) | [Hugging Face SE-600M](https://huggingface.co/arcinstitute/SE-600M) | Set-based model family for cellular perturbation response and cell embeddings. |
 | Cell-Graph Compass | 2024-04-29 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.04.29.591739v1) |  |  | Graph-structure foundation model for modeling single cells. |
 | scRDiT | 2024-04 | [arXiv](https://arxiv.org/abs/2404.06153) | [GitHub](https://github.com/DongShengze/scRDiT) |  | Diffusion transformer for generating single-cell RNA-seq data. |
 | CancerFoundation | 2024-02-23 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.23.581779v1) |  |  | Cancer-focused single-cell RNA-seq foundation model for drug resistance. |
@@ -98,6 +123,14 @@ Then open <http://localhost:8000>.
 
 | Resource | Date | Link | Notes |
 | --- | --- | --- | --- |
+| Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance | 2026-06-09 | [Link](https://www.nature.com/articles/s41592-026-03120-y) | Nature Methods analysis of dataset scaling and diversity effects across 400 pretrained single-cell foundation models and 6,400 evaluations. |
+| Scoring gene importance by interpreting single-cell foundation models | 2026-05-27 | [Link](https://www.nature.com/articles/s41587-026-03112-5) | Nature Biotechnology paper introducing SIGnature, an attribution-based framework for scoring gene importance from scRNA-seq foundation models. |
+| GSFM: A gene set foundation model pre-trained on a massive collection of diverse gene sets | 2026-05 | [Link](https://www.cell.com/patterns/fulltext/S2666-3899(26)00074-7) | Patterns paper on a gene-set foundation model with an associated web resource and code release. |
+| Intermediate Layers Encode Optimal Biological Representations in Single-Cell Foundation Models | 2026-04-16 | [Link](https://arxiv.org/abs/2604.14838) | Layer-wise benchmark of scFoundation and Tahoe-X1 representations for trajectory and perturbation tasks. |
+| Learning multi-cellular representations of single-cell transcriptomics data enables characterization of patient-level disease states | 2026-03-31 | [Link](https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00052-9) | Cell Systems paper on patient-level representations learned from collections of single-cell transcriptomes. |
+| Benchmarking zero-shot single-cell foundation model embeddings for cellular dynamics reconstruction | 2026-03-10 | [Link](https://www.biorxiv.org/content/10.64898/2026.03.10.710748v1) | Zero-shot benchmark focused on cellular dynamics reconstruction from foundation model embeddings. |
+| Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic in single-cell foundation models | 2026-03 | [Link](https://arxiv.org/abs/2603.02952) | Sparse-autoencoder analysis of Geneformer and scGPT representations. |
+| From modality-specific to compositional foundation models for cell biology | 2026-02-18 | [Link](https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00016-5) | Cell Systems perspective on compositional multimodal foundation-model design for cell biology. |
 | scDrugMap | 2025-05 | [Link](https://arxiv.org/abs/2505.05612) | Benchmarking large foundation models for drug response prediction. |
 | A Survey on Foundation Language Models for Single-cell Biology | 2025 | [Link](https://aclanthology.org/2025.acl-long.26.pdf) | Taxonomy and task summary for single-cell PLMs and LLMs. |
 | Assessing the limits of zero-shot foundation models in single-cell biology | 2025 | [Link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03781-6) | Zero-shot evaluation of single-cell foundation model embeddings. |

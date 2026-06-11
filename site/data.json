@@ -1,6 +1,53 @@
 {
-  "updated": "2026-05-28",
+  "updated": "2026-06-11",
   "models": [
+    {
+      "name": "CAPTAIN",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-026-72882-y"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Multimodal foundation model pretrained on co-assayed single-cell RNA and surface-protein profiles from more than four million cells.",
+      "date": "2026-05-07"
+    },
+    {
+      "name": "CellVQ",
+      "category": "General",
+      "paper": [
+        {
+          "label": "Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-026-70071-5"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/A4Bio/CellVQ"
+        }
+      ],
+      "resources": [],
+      "notes": "Comprehensive interpretable single-cell foundation model with a discretized cell-code representation and CellVQ-Graph for biological discovery.",
+      "date": "2026-03-16"
+    },
+    {
+      "name": "TxFM",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "ICLR 2026 Workshop / OpenReview",
+          "url": "https://openreview.net/forum?id=NqZqClqtTK"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Transformer masked autoencoder trained on curated bulk and single-cell RNA-seq for perturbation representation and cell analysis tasks.",
+      "date": "2026-03-03"
+    },
     {
       "name": "Lingshu-Cell",
       "category": "General",
@@ -19,6 +66,62 @@
       ],
       "notes": "Masked discrete diffusion generative cellular world model for transcriptome-wide modeling and perturbation response prediction.",
       "date": "2026-03"
+    },
+    {
+      "name": "scLong",
+      "category": "General",
+      "paper": [
+        {
+          "label": "Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-026-69102-y"
+        },
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.11.09.622759v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/BaiDing1234/scLong"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Zenodo",
+          "url": "https://zenodo.org/records/17510567"
+        }
+      ],
+      "notes": "Billion-parameter scRNA-seq foundation model pretrained on 48M cells with full-transcriptome attention and Gene Ontology knowledge.",
+      "date": "2026-02-05"
+    },
+    {
+      "name": "GREmLN",
+      "category": "General",
+      "paper": [
+        {
+          "label": "ICLR 2026 submission / OpenReview",
+          "url": "https://openreview.net/forum?id=HdvI8bkdDG"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Graph-structure-aware transcriptomics foundation model that injects molecular interaction networks into Transformer attention.",
+      "date": "2025-09-18"
+    },
+    {
+      "name": "HiBio-ST",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "ICLR 2026 submission / OpenReview",
+          "url": "https://openreview.net/forum?id=oG07enidTy"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Hierarchical multimodal foundation model using biological prior anchors for spatial transcriptomics and computational pathology.",
+      "date": "2025-09-02"
     },
     {
       "name": "RegFormer",
@@ -272,14 +375,18 @@
       "category": "General",
       "paper": [
         {
+          "label": "NeurIPS 2025 / OpenReview",
+          "url": "https://openreview.net/forum?id=Vk2sfKAdeu"
+        },
+        {
           "label": "bioRxiv",
           "url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1"
         }
       ],
       "code": [],
       "resources": [],
-      "notes": "Privacy-preserving tabular foundation model for single-cell transcriptomics with federated learning.",
-      "date": "2025-01-06"
+      "notes": "Privacy-preserving tabular self-supervised foundation model for single-cell transcriptomics with federated learning.",
+      "date": "2025-09-18"
     },
     {
       "name": "EpiAgent",
@@ -1270,10 +1377,40 @@
   ],
   "resources": [
     {
+      "name": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
+      "link": "https://www.nature.com/articles/s41592-026-03120-y",
+      "notes": "Nature Methods analysis of dataset scaling and diversity effects across 400 pretrained single-cell foundation models and 6,400 evaluations.",
+      "date": "2026-06-09"
+    },
+    {
+      "name": "Scoring gene importance by interpreting single-cell foundation models",
+      "link": "https://www.nature.com/articles/s41587-026-03112-5",
+      "notes": "Nature Biotechnology paper introducing SIGnature, an attribution-based framework for scoring gene importance from scRNA-seq foundation models.",
+      "date": "2026-05-27"
+    },
+    {
+      "name": "GSFM: A gene set foundation model pre-trained on a massive collection of diverse gene sets",
+      "link": "https://www.cell.com/patterns/fulltext/S2666-3899(26)00074-7",
+      "notes": "Patterns paper on a gene-set foundation model with an associated web resource and code release.",
+      "date": "2026-05"
+    },
+    {
       "name": "Intermediate Layers Encode Optimal Biological Representations in Single-Cell Foundation Models",
       "link": "https://arxiv.org/abs/2604.14838",
       "notes": "Layer-wise benchmark of scFoundation and Tahoe-X1 representations for trajectory and perturbation tasks.",
       "date": "2026-04-16"
+    },
+    {
+      "name": "Learning multi-cellular representations of single-cell transcriptomics data enables characterization of patient-level disease states",
+      "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00052-9",
+      "notes": "Cell Systems paper on patient-level representations learned from collections of single-cell transcriptomes.",
+      "date": "2026-03-31"
+    },
+    {
+      "name": "From modality-specific to compositional foundation models for cell biology",
+      "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00016-5",
+      "notes": "Cell Systems perspective on compositional multimodal foundation-model design for cell biology.",
+      "date": "2026-02-18"
     },
     {
       "name": "Benchmarking zero-shot single-cell foundation model embeddings for cellular dynamics reconstruction",
