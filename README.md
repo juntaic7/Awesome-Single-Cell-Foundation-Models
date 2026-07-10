@@ -2,7 +2,7 @@
 
 A simple list of single-cell foundation models and related resources.
 
-Last updated: 2026-06-11.
+Last updated: 2026-07-09.
 
 Note: The current contents are AI-generated and may contain mistakes. All collaborations are welcome, including validating existing entries, correcting inaccuracies, or proposing new papers and resources.
 
@@ -32,6 +32,8 @@ Then open <http://localhost:8000>.
 
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
+| Gene Intelligence | 2026-07-03 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.06.29.735389v1) |  |  | Compact single-cell transformer that embeds log-transformed raw counts directly and jointly predicts masked genes and counts without normalization or positional encoding. |
+| CellOS | 2026-06-23 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.06.18.733163v2) |  |  | 12B-parameter cellular world model trained on 390.5M transcriptomes using paired expression and perception views, dense-to-MoE scaling, and LLM-JEPA alignment. |
 | RegFormer | 2026-05-05 | [Nature Communications](https://www.nature.com/articles/s41467-026-72198-x), [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.01.24.634217v1) |  |  | GRN-guided Mamba foundation model pretrained on human single-cell transcriptomes. |
 | CellVQ | 2026-03-16 | [Nature Communications](https://www.nature.com/articles/s41467-026-70071-5) | [GitHub](https://github.com/A4Bio/CellVQ) |  | Comprehensive interpretable single-cell foundation model with a discretized cell-code representation and CellVQ-Graph for biological discovery. |
 | Lingshu-Cell | 2026-03 | [arXiv](https://arxiv.org/abs/2603.25240) |  | [Project page](https://alibaba-damo-academy.github.io/lingshu-cell-homepage/) | Masked discrete diffusion generative cellular world model for transcriptome-wide modeling and perturbation response prediction. |
@@ -59,6 +61,7 @@ Then open <http://localhost:8000>.
 
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
+| HoloCell | 2026-06-11 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.06.07.730684v2) |  |  | 860M-parameter generative foundation model jointly modeling single-cell epigenomics, transcriptomics, and proteomics with hierarchical tokenization and iterative diffusion-based generation. |
 | CAPTAIN | 2026-05-07 | [Nature Communications](https://www.nature.com/articles/s41467-026-72882-y) |  |  | Multimodal foundation model pretrained on co-assayed single-cell RNA and surface-protein profiles from more than four million cells. |
 | CellxPert | 2026-04-30 | [arXiv](https://arxiv.org/abs/2605.00930) |  |  | Multimodal single-cell and spatial foundation model with MCMC steering for in-silico perturbation. |
 | CLM-X | 2026-02-18 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.02.17.704943v1) |  |  | Multi-way Transformer foundation model for unified scRNA-seq and scATAC-seq analysis. |
@@ -98,6 +101,7 @@ Then open <http://localhost:8000>.
 
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
+| PertAdapt | 2026-07-07 | [Bioinformatics](https://academic.oup.com/bioinformatics/article/42/Supplement_1/btag307/8726320) | [GitHub](https://github.com/BaiDing1234/PertAdapt) |  | Condition-sensitive adapter and adaptive loss for transferring pretrained single-cell foundation models to genetic perturbation-response prediction. |
 | scpFormer | 2026-04 | [arXiv](https://arxiv.org/abs/2604.20003) |  |  | Foundation model for unified representation and integration of single-cell proteomics. |
 | TxFM | 2026-03-03 | [ICLR 2026 Workshop / OpenReview](https://openreview.net/forum?id=NqZqClqtTK) |  |  | Transformer masked autoencoder trained on curated bulk and single-cell RNA-seq for perturbation representation and cell analysis tasks. |
 | Tahoe-x1 | 2025-10-23 | [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.10.23.683759v1) | [GitHub](https://github.com/tahoebio/tahoe-x1) | [Hugging Face](https://huggingface.co/tahoebio/Tahoe-x1), [Blog](https://www.tahoebio.ai/news/tahoe-x1-blog) | Perturbation-trained single-cell foundation model family up to 3B parameters. |
@@ -123,6 +127,8 @@ Then open <http://localhost:8000>.
 
 | Resource | Date | Link | Notes |
 | --- | --- | --- | --- |
+| Tabular Foundation Models Are Competitive Cellular Perturbation Predictors Across Biological Scales | 2026-07-02 | [Link](https://www.biorxiv.org/content/10.64898/2026.06.28.735106v2) | Benchmark of general-purpose tabular foundation models against specialized perturbation models across cell-level, pseudobulk, primary-cell, and embryo-scale prediction settings. |
+| VCBench: A Multi-Dimensional Benchmark for Single-Cell Foundation Models | 2026-06-23 | [Link](https://www.biorxiv.org/content/10.64898/2026.06.18.733146v1) | Evaluation of five foundation models across five testable virtual-cell capability dimensions, with simple baselines and a contamination-reporting schema. |
 | Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance | 2026-06-09 | [Link](https://www.nature.com/articles/s41592-026-03120-y) | Nature Methods analysis of dataset scaling and diversity effects across 400 pretrained single-cell foundation models and 6,400 evaluations. |
 | Scoring gene importance by interpreting single-cell foundation models | 2026-05-27 | [Link](https://www.nature.com/articles/s41587-026-03112-5) | Nature Biotechnology paper introducing SIGnature, an attribution-based framework for scoring gene importance from scRNA-seq foundation models. |
 | GSFM: A gene set foundation model pre-trained on a massive collection of diverse gene sets | 2026-05 | [Link](https://www.cell.com/patterns/fulltext/S2666-3899(26)00074-7) | Patterns paper on a gene-set foundation model with an associated web resource and code release. |
