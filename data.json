@@ -1,6 +1,67 @@
 {
-  "updated": "2026-06-11",
+  "updated": "2026-07-09",
   "models": [
+    {
+      "name": "Gene Intelligence",
+      "category": "General",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.735389v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Compact single-cell transformer that embeds log-transformed raw counts directly and jointly predicts masked genes and counts without normalization or positional encoding.",
+      "date": "2026-07-03"
+    },
+    {
+      "name": "CellOS",
+      "category": "General",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733163v2"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "12B-parameter cellular world model trained on 390.5M transcriptomes using paired expression and perception views, dense-to-MoE scaling, and LLM-JEPA alignment.",
+      "date": "2026-06-23"
+    },
+    {
+      "name": "HoloCell",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.06.07.730684v2"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "860M-parameter generative foundation model jointly modeling single-cell epigenomics, transcriptomics, and proteomics with hierarchical tokenization and iterative diffusion-based generation.",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "PertAdapt",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "Bioinformatics",
+          "url": "https://academic.oup.com/bioinformatics/article/42/Supplement_1/btag307/8726320"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/BaiDing1234/PertAdapt"
+        }
+      ],
+      "resources": [],
+      "notes": "Condition-sensitive adapter and adaptive loss for transferring pretrained single-cell foundation models to genetic perturbation-response prediction.",
+      "date": "2026-07-07"
+    },
     {
       "name": "CAPTAIN",
       "category": "Multimodal / Spatial",
@@ -1376,6 +1437,18 @@
     }
   ],
   "resources": [
+    {
+      "name": "Tabular Foundation Models Are Competitive Cellular Perturbation Predictors Across Biological Scales",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.28.735106v2",
+      "notes": "Benchmark of general-purpose tabular foundation models against specialized perturbation models across cell-level, pseudobulk, primary-cell, and embryo-scale prediction settings.",
+      "date": "2026-07-02"
+    },
+    {
+      "name": "VCBench: A Multi-Dimensional Benchmark for Single-Cell Foundation Models",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.18.733146v1",
+      "notes": "Evaluation of five foundation models across five testable virtual-cell capability dimensions, with simple baselines and a contamination-reporting schema.",
+      "date": "2026-06-23"
+    },
     {
       "name": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
       "link": "https://www.nature.com/articles/s41592-026-03120-y",
