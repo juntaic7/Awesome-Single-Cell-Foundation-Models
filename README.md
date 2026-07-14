@@ -61,6 +61,7 @@ Then open <http://localhost:8000>.
 
 | Model | Date | Paper | Code | Resources | Notes |
 | --- | --- | --- | --- | --- | --- |
+| DeepSpot-M | 2026-06-19 | [medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1) | [GitHub](https://github.com/ratschlab/DeepSpotM) |  | Multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology. |
 | HoloCell | 2026-06-11 | [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.06.07.730684v2) |  |  | 860M-parameter generative foundation model jointly modeling single-cell epigenomics, transcriptomics, and proteomics with hierarchical tokenization and iterative diffusion-based generation. |
 | CAPTAIN | 2026-05-07 | [Nature Communications](https://www.nature.com/articles/s41467-026-72882-y) |  |  | Multimodal foundation model pretrained on co-assayed single-cell RNA and surface-protein profiles from more than four million cells. |
 | CellxPert | 2026-04-30 | [arXiv](https://arxiv.org/abs/2605.00930) |  |  | Multimodal single-cell and spatial foundation model with MCMC steering for in-silico perturbation. |
