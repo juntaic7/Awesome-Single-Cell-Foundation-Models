@@ -1,6 +1,186 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-21",
   "models": [
+    {
+      "name": "scVision",
+      "category": "General",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2607.14163"
+        }
+      ],
+      "code": [],
+      "resources": [
+        {
+          "label": "Project page",
+          "url": "https://islamlab.org/scvision/"
+        }
+      ],
+      "notes": "Vision foundation model that renders transcriptomes as continuous gene-expression images and pretrains a masked-image transformer on 72 million human cells.",
+      "date": "2026-07-15"
+    },
+    {
+      "name": "xVERSE",
+      "category": "General",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.04.12.718016v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jichunxie/xVERSE_code"
+        }
+      ],
+      "resources": [],
+      "notes": "Transcriptomics-native generative foundation model coupling batch-invariant representation learning with probabilistic whole-transcriptome synthesis.",
+      "date": "2026-04-14"
+    },
+    {
+      "name": "STORM",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2604.03630"
+        }
+      ],
+      "code": [],
+      "resources": [
+        {
+          "label": "Project page",
+          "url": "https://storm-web-demo.vercel.app/"
+        }
+      ],
+      "notes": "Multimodal foundation model aligning histology, gene expression, and spatial context across 1.2 million spatial profiles from 18 organs.",
+      "date": "2026-04-04"
+    },
+    {
+      "name": "Novae",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "Nature Methods",
+          "url": "https://www.nature.com/articles/s41592-025-02899-6"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MICS-Lab/novae"
+        }
+      ],
+      "resources": [],
+      "notes": "Graph-based spatial transcriptomics foundation model trained on nearly 30 million cells for zero-shot domain inference, batch correction, and tissue-architecture analysis.",
+      "date": "2025-12-10"
+    },
+    {
+      "name": "CellWhisperer",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        {
+          "label": "Nature Biotechnology",
+          "url": "https://www.nature.com/articles/s41587-025-02857-9"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/epigen/cellwhisperer"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Project page",
+          "url": "https://cellwhisperer.bocklab.org/"
+        }
+      ],
+      "notes": "Multimodal transcriptome-text model for zero-shot cell annotation, free-text search, and chat-based exploration of single-cell RNA-seq data.",
+      "date": "2025-11-11"
+    },
+    {
+      "name": "HiCFoundation",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "Nature Methods",
+          "url": "https://www.nature.com/articles/s41592-026-03097-8"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Noble-Lab/HiCFoundation"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Zenodo",
+          "url": "https://doi.org/10.5281/zenodo.14436390"
+        }
+      ],
+      "notes": "Hi-C foundation model for chromatin architecture and epigenomic prediction that adapts to single-cell Hi-C resolution enhancement across species.",
+      "date": "2026-06-15"
+    },
+    {
+      "name": "CellDuality",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        {
+          "label": "ICLR 2026",
+          "url": "https://iclr.cc/virtual/2026/poster/10010343"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Self-supervised RLVR framework that trains LLM agents for mechanistic single-cell reasoning through paired forward and inverse biological tasks.",
+      "date": "2026-04-24"
+    },
+    {
+      "name": "CellAgent",
+      "category": "LLM-native / Agentic",
+      "paper": [
+        {
+          "label": "ICLR 2026",
+          "url": "https://iclr.cc/virtual/2026/poster/10010902"
+        },
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.05.13.593861v4"
+        }
+      ],
+      "code": [],
+      "resources": [
+        {
+          "label": "Project page",
+          "url": "http://cell.agent4science.cn/"
+        }
+      ],
+      "notes": "Autonomous multi-agent framework for end-to-end single-cell and spatial transcriptomics analysis through natural-language interactions.",
+      "date": "2026-04-23"
+    },
+    {
+      "name": "TissueFormer",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "BMC Bioinformatics",
+          "url": "https://link.springer.com/article/10.1186/s12859-026-06490-4"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ZadorLaboratory/TissueFormer"
+        }
+      ],
+      "resources": [],
+      "notes": "Hierarchical Transformer extending single-cell foundation models to predict sample- and tissue-level phenotypes from groups of cells.",
+      "date": "2026-06-04"
+    },
     {
       "name": "Gene Intelligence",
       "category": "General",
@@ -343,6 +523,10 @@
       "category": "LLM-native / Agentic",
       "paper": [
         {
+          "label": "Journal of Genetics and Genomics (accepted)",
+          "url": "https://www.jgenetgenomics.cn/en/article/doi/10.1016/j.jgg.2025.11.012"
+        },
+        {
           "label": "bioRxiv",
           "url": "https://www.biorxiv.org/content/10.1101/2025.05.20.655112v1"
         }
@@ -350,7 +534,7 @@
       "code": [],
       "resources": [],
       "notes": "Reasoning-enhanced 7B LLM for zero- and few-shot single-cell type annotation.",
-      "date": "2025-05-26"
+      "date": "2025-11-20"
     },
     {
       "name": "CellTypeAgent",
@@ -525,6 +709,10 @@
       "category": "General",
       "paper": [
         {
+          "label": "Science",
+          "url": "https://www.science.org/doi/10.1126/science.aec8514"
+        },
+        {
           "label": "bioRxiv",
           "url": "https://www.biorxiv.org/content/10.1101/2025.04.25.650731v1"
         }
@@ -542,7 +730,7 @@
         }
       ],
       "notes": "Cross-species generative cell atlas model trained on up to 112M cells across 12 species.",
-      "date": "2025-04-25"
+      "date": "2026-07-02"
     },
     {
       "name": "scPRINT",
@@ -722,6 +910,10 @@
       "category": "General",
       "paper": [
         {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/s41586-026-10689-z"
+        },
+        {
           "label": "bioRxiv",
           "url": "https://www.biorxiv.org/content/10.1101/2023.11.28.568918v1"
         }
@@ -743,12 +935,16 @@
         }
       ],
       "notes": "Cross-species zero-shot cell embeddings using protein-language-model gene tokenization.",
-      "date": "2023-11-28"
+      "date": "2026-07-08"
     },
     {
       "name": "GeneCompass",
       "category": "General",
       "paper": [
+        {
+          "label": "Cell Research",
+          "url": "https://www.nature.com/articles/s41422-024-01034-y"
+        },
         {
           "label": "bioRxiv",
           "url": "https://www.biorxiv.org/content/10.1101/2023.09.26.559542v1"
@@ -762,7 +958,7 @@
       ],
       "resources": [],
       "notes": "Knowledge-informed cross-species foundation model pretrained on human and mouse single-cell transcriptomes.",
-      "date": "2023-09-26"
+      "date": "2024-10-08"
     },
     {
       "name": "Geneformer",
@@ -1015,6 +1211,10 @@
       "category": "Multimodal / Spatial",
       "paper": [
         {
+          "label": "ICML 2024 / PMLR",
+          "url": "https://proceedings.mlr.press/v235/zhao24u.html"
+        },
+        {
           "label": "arXiv",
           "url": "https://arxiv.org/abs/2405.06708"
         }
@@ -1032,7 +1232,7 @@
         }
       ],
       "notes": "Language-cell pretraining for cell identity understanding and cell-text retrieval.",
-      "date": "2024-05"
+      "date": "2024-07"
     },
     {
       "name": "scPilot",
@@ -1183,14 +1383,23 @@
       "category": "LLM-native / Agentic",
       "paper": [
         {
+          "label": "Patterns",
+          "url": "https://www.sciencedirect.com/science/article/pii/S266638992500279X"
+        },
+        {
           "label": "bioRxiv",
           "url": "https://www.biorxiv.org/content/10.1101/2023.12.07.569910v1"
         }
       ],
-      "code": [],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HelloWorldLTY/scELMo"
+        }
+      ],
       "resources": [],
       "notes": "LLM-derived embeddings for single-cell data analysis.",
-      "date": "2023-12-07"
+      "date": "2026-02-13"
     },
     {
       "name": "GenePT",
@@ -1457,6 +1666,12 @@
   ],
   "resources": [
     {
+      "name": "Harmonised benchmarking of foundation models for single-cell and spatial transcriptomics reveals context-dependent generalisation",
+      "link": "https://arxiv.org/abs/2607.17227",
+      "notes": "Harmonized evaluation of six foundation models across clustering, annotation, marker-gene concordance, and perturbation prediction.",
+      "date": "2026-07-19"
+    },
+    {
       "name": "Tabular Foundation Models Are Competitive Cellular Perturbation Predictors Across Biological Scales",
       "link": "https://www.biorxiv.org/content/10.64898/2026.06.28.735106v2",
       "notes": "Benchmark of general-purpose tabular foundation models against specialized perturbation models across cell-level, pseudobulk, primary-cell, and embryo-scale prediction settings.",
@@ -1481,10 +1696,22 @@
       "date": "2026-05-27"
     },
     {
+      "name": "SCMBench: a benchmarking framework for single-cell multimodal data integration",
+      "link": "https://www.nature.com/articles/s41467-026-72570-x",
+      "notes": "Benchmark of 23 specialized and foundation models for single-cell multimodal integration, with task-specific adapters and selection guidance.",
+      "date": "2026-05-02"
+    },
+    {
       "name": "GSFM: A gene set foundation model pre-trained on a massive collection of diverse gene sets",
       "link": "https://www.cell.com/patterns/fulltext/S2666-3899(26)00074-7",
       "notes": "Patterns paper on a gene-set foundation model with an associated web resource and code release.",
       "date": "2026-05"
+    },
+    {
+      "name": "SC-Arena: A Natural Language Benchmark for Single-Cell Reasoning with Knowledge-Augmented Evaluation",
+      "link": "https://openreview.net/forum?id=5RcoUe1tA1",
+      "notes": "ICLR 2026 benchmark spanning annotation, captioning, generation, perturbation prediction, and scientific question answering.",
+      "date": "2026-04-23"
     },
     {
       "name": "Intermediate Layers Encode Optimal Biological Representations in Single-Cell Foundation Models",
