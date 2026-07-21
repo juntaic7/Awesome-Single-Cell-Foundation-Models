@@ -30,6 +30,25 @@
       "date": "2026-06-23"
     },
     {
+      "name": "DeepSpot-M",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "medRxiv",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ratschlab/DeepSpotM"
+        }
+      ],
+      "resources": [],
+      "notes": "Multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology.",
+      "date": "2026-06-19"
+    },
+    {
       "name": "HoloCell",
       "category": "Multimodal / Spatial",
       "paper": [
