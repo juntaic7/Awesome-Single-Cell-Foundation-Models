@@ -1,6 +1,204 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-08-12",
   "models": [
+    {
+      "name": "scDMC",
+      "category": "General",
+      "paper": [
+        {
+          "label": "Genome Biology",
+          "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-026-04193-w"
+        },
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.09.05.674596v2"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HonglieGuo/scDMC"
+        }
+      ],
+      "resources": [],
+      "notes": "Dual-stream masked-contrastive foundation model that jointly preserves ranked-gene context and expression magnitude, pretrained on 2 million cells.",
+      "date": "2026-08-08"
+    },
+    {
+      "name": "MicroSC",
+      "category": "General",
+      "paper": [
+        {
+          "label": "Research Square",
+          "url": "https://www.researchsquare.com/article/rs-10410549/v1"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Distilled family of 1.5M-7.7M-parameter single-cell transformers designed for fast, commodity-hardware inference.",
+      "date": "2026-07-21"
+    },
+    {
+      "name": "scPRINT-2",
+      "category": "General",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.11.693702v3"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/cantinilab/scPRINT-2"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Project page",
+          "url": "https://cantinilab.github.io/scPRINT-2/"
+        }
+      ],
+      "notes": "Next-generation scPRINT model pretrained on more than 350M cells from 16 species for denoising, embeddings, label prediction, gene networks, and cross-species integration.",
+      "date": "2026-02-11"
+    },
+    {
+      "name": "scMMGPT",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "KDD 2026",
+          "url": "https://doi.org/10.1145/3770855.3819031"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2503.09427"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/syr-cn/scMMGPT"
+        }
+      ],
+      "resources": [],
+      "notes": "Multimodal framework that combines quantitative single-cell expression with biological text through discriminative and generative pretraining.",
+      "date": "2026-08-08"
+    },
+    {
+      "name": "VOICE",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2608.08366"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Vision-omics foundation model aligning H&E morphology with transcriptome embeddings over 23M Xenium cells for direct and retrieval-based expression prediction.",
+      "date": "2026-08-08"
+    },
+    {
+      "name": "TissueFormer (spatial biology)",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.07.31.741265v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/uhlerlab/TissueFormer"
+        }
+      ],
+      "resources": [],
+      "notes": "Whole-slide multimodal foundation model trained on 17M image-expression pairs for cellular-resolution expression prediction and multi-scale pathology tasks.",
+      "date": "2026-08-06"
+    },
+    {
+      "name": "Spatium",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740264v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ploughhh/Spatium"
+        }
+      ],
+      "resources": [],
+      "notes": "Protein-language foundation model pretrained on more than 51M cells across spatial-proteomics platforms for transferable cell and tissue representations.",
+      "date": "2026-07-26"
+    },
+    {
+      "name": "scMIR",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2607.22712"
+        }
+      ],
+      "code": [],
+      "resources": [],
+      "notes": "Vision-language foundation model pretrained on 207,957 microscopy image-text pairs for single-cell phenotypic representation.",
+      "date": "2026-07-21"
+    },
+    {
+      "name": "Clifti-GPT",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "BioData Mining",
+          "url": "https://doi.org/10.1186/s13040-026-00582-w"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Mohammad-Bakhtiari/clifti-GPT"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Zenodo benchmark data",
+          "url": "https://zenodo.org/records/20491149"
+        }
+      ],
+      "notes": "Privacy-preserving federated fine-tuning and transferable inference framework built on scGPT for decentralized clinical cohorts.",
+      "date": "2026-08-05"
+    },
+    {
+      "name": "scMaize",
+      "category": "Domain / Task",
+      "paper": [
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.08.01.742180v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yjthu/scMaize"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Project portal",
+          "url": "https://www.scmaize.com/"
+        }
+      ],
+      "notes": "Maize-specific foundation-model family pretrained on an integrated 385,675-cell atlas, including a Gene Ontology-informed variant.",
+      "date": "2026-08-05"
+    },
     {
       "name": "scVision",
       "category": "General",
@@ -163,7 +361,7 @@
       "date": "2026-04-23"
     },
     {
-      "name": "TissueFormer",
+      "name": "TissueFormer (sample-level)",
       "category": "Domain / Task",
       "paper": [
         {
@@ -337,7 +535,7 @@
         },
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2024.11.09.622759v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2024.11.09.622759v2"
         }
       ],
       "code": [
@@ -393,7 +591,7 @@
         },
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.01.24.634217v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.24.634217v3"
         }
       ],
       "code": [],
@@ -435,7 +633,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.64898/2025.12.29.696804v1"
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.29.696804v3"
         }
       ],
       "code": [],
@@ -603,7 +801,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636688v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636688v2"
         },
         {
           "label": "PMC",
@@ -714,7 +912,7 @@
         },
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.04.25.650731v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2025.04.25.650731v2"
         }
       ],
       "code": [
@@ -892,7 +1090,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2024.01.25.577152v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2024.01.25.577152v2"
         }
       ],
       "code": [
@@ -915,7 +1113,7 @@
         },
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2023.11.28.568918v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2023.11.28.568918v3"
         }
       ],
       "code": [
@@ -965,6 +1163,10 @@
       "category": "General",
       "paper": [
         {
+          "label": "Nature Computational Science",
+          "url": "https://www.nature.com/articles/s43588-026-00972-4"
+        },
+        {
           "label": "Nature",
           "url": "https://www.nature.com/articles/s41586-023-06139-9"
         }
@@ -981,8 +1183,8 @@
           "url": "https://geneformer.readthedocs.io/"
         }
       ],
-      "notes": "Foundation transformer for context-aware network biology predictions from single-cell transcriptomes.",
-      "date": "2023-05"
+      "notes": "Updated V2 family pretrained on 104M human cells, with 104M- and 316M-parameter checkpoints and quantized fine-tuning and inference.",
+      "date": "2026-03-27"
     },
     {
       "name": "tGPT",
@@ -1162,7 +1364,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.64898/2026.01.09.698608v1"
+          "url": "https://www.biorxiv.org/content/10.64898/2026.01.09.698608v2"
         },
         {
           "label": "Arc Institute news",
@@ -1263,7 +1465,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v2"
+          "url": "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v4"
         }
       ],
       "code": [
@@ -1291,7 +1493,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2024.10.01.616063v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2024.10.01.616063v3"
         },
         {
           "label": "PMC",
@@ -1388,7 +1590,7 @@
         },
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2023.12.07.569910v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2023.12.07.569910v4"
         }
       ],
       "code": [
@@ -1407,7 +1609,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2023.10.16.562533v2"
         }
       ],
       "code": [
@@ -1510,7 +1712,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661135v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661135v2"
         },
         {
           "label": "Arc Institute model collection",
@@ -1533,18 +1735,22 @@
       "date": "2025-07-10"
     },
     {
-      "name": "Cell-Graph Compass",
+      "name": "Cell-GraphCompass",
       "category": "Domain / Task",
       "paper": [
         {
+          "label": "National Science Review",
+          "url": "https://academic.oup.com/nsr/article/12/10/nwaf255/8172492"
+        },
+        {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2024.04.29.591739v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2024.06.04.597354v1"
         }
       ],
       "code": [],
       "resources": [],
-      "notes": "Graph-structure foundation model for modeling single cells.",
-      "date": "2024-04-29"
+      "notes": "Graph-structure foundation model pretrained on more than 50M human cells with expression, gene text, regulatory, co-expression, and genomic-position features.",
+      "date": "2025-06-24"
     },
     {
       "name": "scRDiT",
@@ -1570,14 +1776,14 @@
       "category": "Domain / Task",
       "paper": [
         {
-          "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2024.02.23.581779v1"
+          "label": "OpenReview",
+          "url": "https://openreview.net/forum?id=ofcL9aXxp6"
         }
       ],
       "code": [],
       "resources": [],
-      "notes": "Cancer-focused single-cell RNA-seq foundation model for drug resistance.",
-      "date": "2024-02-23"
+      "notes": "Cancer-focused single-cell RNA-seq foundation model trained on malignant cells for integration, drug-response, and survival prediction.",
+      "date": "2024-11-02"
     },
     {
       "name": "scmFormer",
@@ -1650,7 +1856,7 @@
       "paper": [
         {
           "label": "bioRxiv",
-          "url": "https://www.biorxiv.org/content/10.1101/2023.07.04.547619v1"
+          "url": "https://www.biorxiv.org/content/10.1101/2023.07.04.547619v2"
         }
       ],
       "code": [
@@ -1665,6 +1871,60 @@
     }
   ],
   "resources": [
+    {
+      "name": "AdaGeneBudget: Cell-Adaptive Gene-Token Allocation for Efficient Single-Cell Foundation Models",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.08.06.743174v1",
+      "notes": "Training-free, cell-adaptive token selection for reducing memory and increasing inference throughput in frozen scGPT and Geneformer backbones.",
+      "date": "2026-08-12"
+    },
+    {
+      "name": "Benchmarking single-cell foundation models in a zero-shot setting",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.08.03.739553v1",
+      "notes": "Zero-shot comparison of scGPT, SCimilarity, UCE, and TranscriptFormer across annotation, integration, and protein-expression prediction.",
+      "date": "2026-08-07"
+    },
+    {
+      "name": "A confound-diagnostic toolkit for in silico perturbation with single-cell foundation models",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.08.04.732812v1",
+      "notes": "Matched-control framework for testing whether token-deletion perturbation readouts contain information beyond gene identity and technical confounds.",
+      "date": "2026-08-07"
+    },
+    {
+      "name": "Evaluating the ability of spatial transcriptomics foundation models to learn multi-scale spatial variation",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.08.01.742217v1",
+      "notes": "SAFFRON uses sparse autoencoders to test whether spatial foundation-model features capture local and global expression variation.",
+      "date": "2026-08-06"
+    },
+    {
+      "name": "Scaling an Autoregressive Transformer for Single-Cell Generation",
+      "link": "https://arxiv.org/abs/2608.02961",
+      "notes": "Scaling-law study of a causal transformer with a quantized-VAE tokenizer for conditional single-cell expression generation.",
+      "date": "2026-08-03"
+    },
+    {
+      "name": "Beyond Gene Reconstruction: Learning Cell Representations through Complementary Transcriptomic Views",
+      "link": "https://arxiv.org/abs/2608.00985",
+      "notes": "Contrastive pretraining framework using co-expression-guided complementary views, expression-preserving negatives, and competence-gated training.",
+      "date": "2026-08-02"
+    },
+    {
+      "name": "Residual-stream geometry of single-cell foundation models carries incremental gene-regulatory signal across tissues",
+      "link": "https://doi.org/10.1186/s12859-026-06538-5",
+      "notes": "Controlled evaluation of residual-stream geometry as a modest, context-dependent evidence channel for regulatory-edge prioritization.",
+      "date": "2026-07-24"
+    },
+    {
+      "name": "Systematic evaluation of single-cell foundation model interpretability: attention-derived edge scores add no incremental value over gene-level features for perturbation-target prediction",
+      "link": "https://doi.org/10.1186/s12864-026-12965-8",
+      "notes": "Causal and matched-baseline evaluation separating curated-reference recovery from prediction of perturbation-responsive targets.",
+      "date": "2026-07-22"
+    },
+    {
+      "name": "Auditing pretraining contamination in single-cell foundation model benchmarks",
+      "link": "https://arxiv.org/abs/2607.20572",
+      "notes": "scContam audit combining gene-set fingerprints and membership inference to detect pretraining overlap in benchmark cells.",
+      "date": "2026-07-21"
+    },
     {
       "name": "Harmonised benchmarking of foundation models for single-cell and spatial transcriptomics reveals context-dependent generalisation",
       "link": "https://arxiv.org/abs/2607.17227",
@@ -1738,10 +1998,10 @@
       "date": "2026-03-10"
     },
     {
-      "name": "Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic in single-cell foundation models",
-      "link": "https://arxiv.org/abs/2603.02952",
-      "notes": "Sparse-autoencoder analysis of Geneformer and scGPT representations.",
-      "date": "2026-03"
+      "name": "Sparse autoencoders reveal interpretable cell-type programs in single-cell foundation model representations",
+      "link": "https://doi.org/10.1016/j.jbi.2026.105056",
+      "notes": "Journal version of the sparse-autoencoder analysis of Geneformer and scGPT representations.",
+      "date": "2026-08"
     },
     {
       "name": "scDrugMap",
