@@ -63,6 +63,73 @@
       "date": "2026-02-11"
     },
     {
+      "name": "DeepSpot-M (kidney, KPMP)",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "medRxiv",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ratschlab/projects2026-kidney-kpmp-analysis"
+        }
+      ],
+      "resources": [],
+      "notes": "DeepSpot-M extended beyond oncology to non-cancerous kidney disease: transcriptome-wide virtual spatial transcriptomics from H&E for KPMP kidney biopsies, linking histopathology to molecular programs of kidney injury, repair, fibrosis and kidney function.",
+      "date": "2026-11-17"
+    },
+    {
+      "name": "KPMP virtual spatial transcriptomics atlas",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "medRxiv",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ratschlab/DeepSpotM"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ratschlab/KPMP_virtual_spatial_transcriptomics_atlas"
+        }
+      ],
+      "notes": "Gated dataset (CC BY-NC-SA 4.0) predicted with DeepSpot-M: 1,534 H&E whole-slide images of kidney biopsies from 476 KPMP participants; 19,338 genes in each of ~5.46M spots; linked clinical and histopathological annotations.",
+      "date": "2026-11-17"
+    },
+    {
+      "name": "KPMP Xenium virtual spatial transcriptomics",
+      "category": "Multimodal / Spatial",
+      "paper": [
+        {
+          "label": "medRxiv",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1"
+        }
+      ],
+      "code": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ratschlab/DeepSpotM"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ratschlab/KPMP_Xenium_virtual_spatial_transcriptomics"
+        }
+      ],
+      "notes": "Gated dataset (CC BY-NC-SA 4.0) predicted with DeepSpot-M: 49 H&E sections of KPMP 10x Xenium kidney biopsies; 19,338 genes in each of ~1.64M cells; includes the measured Xenium panel.",
+      "date": "2026-11-17"
+    },
+    {
       "name": "scMMGPT",
       "category": "Multimodal / Spatial",
       "paper": [
